@@ -1,17 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Decode Collective</title>
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="stylesheet" href="/styles/dct_style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Decode Collective</title>
+    <link rel="icon" type="image/png" href="images/logo.svg" sizes="128x128">
+    <meta name="description" content="A selection of work 2017-2020">
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/Style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!-- MAPBOX -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- MAPBOX GEOCODER -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <!-- MAPBOX TILES-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
 </head>
 
 <body>
+    <header>
+        <a href="Index.html" class="shadow-pop-tr"></a>
+        <nav class="menu" id="siteNav">
+            <ul>
+                <!-- <li><a href="Index.html">Home</a></li> -->
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>PROJECTS</h1>
+    <button class="project-menu-toggle">       
+            <div class="t1">
+            </div>
+            <div class="t2">
+            </div>
+            <div class="t3">
+            </div>       
+    </button>
+
+    <section class="heading-container">
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="PROJECTS">PROJECTS</div>
+        </div>
+        <div class="central-container">
+            <!--Make this a grid!!! -->
+            <div class="project-img-container" id="perceptiveDatascapes-project-img">
+                <button class="project-button slide-top">Perceptive Datascapes</button>
+                <p class="project-subtitle"><span class="hor-line"></span> Data Driven Design Apparatus</p>
+            </div>
+        </div>
+        <div class="central-container">
+            <div class="project-img-container" id="rawbot-project-img">
+                <button class="project-button slide-top">Rawbot</button>
+            </div>
+        </div>
+        <div class="central-container">
+            <div class="project-img-container" id="swapper-project-img">
+                <button class="project-button slide-top">Swapper</button>
+            </div>
+        </div>
+        <div class="central-container">
+            <div class="project-img-container" id="urbanGrowth-project-img">
+                <button class="project-button slide-top">Urban Growth</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="scroll-arrow">
+            <div id="cta">
+                <span class="arrow first next "></span>
+                <span class="arrow second next "></span>
+            </div>
+        </div>
+        <h6>Scroll</h6>
+    </div>
+
+
+    <!-- ----------------- SCRIPTS ----------------- -->
+    <script type="text/javascript" defer src="js/projectsJSElements.js"></script>
+
 </body>
 
 </html>

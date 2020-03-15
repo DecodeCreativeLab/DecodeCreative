@@ -1,17 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>Decode Collective</title>
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link rel="stylesheet" href="/styles/dct_style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Decode Collective</title>
+    <link rel="icon" type="image/png" href="images/logo.svg" sizes="128x128">
+    <meta name="description" content="A selection of work 2017-2020">
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/Style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+    <!-- MAPBOX -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- MAPBOX GEOCODER -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <!-- MAPBOX TILES-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
 </head>
 
 <body>
+    <header>
+        <a href="Index.html" class="shadow-pop-tr"></a>
+        <nav class="menu" id="siteNav">
+            <ul>
+                <!-- <li><a href="Index.html">Home</a></li> -->
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>CONTACT</h1>
+
+    <section class="map-container">
+        <div class="glitch-wrapper">
+            <div class="glitch" data-text="CONTACT">CONTACT</div>
+        </div>
+        <div class="contact-container">
+            <div>
+                <div class="container-basic container-flexColumn">
+                    <h2>Anna Kampani</h2>
+                    <p>email: annakampani@yahoo.com</p>
+                    <p>mobile: +44 (0)7753967483</p>
+                    <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="https://www.linkedin.com/in/anna-kampani-863a75150/" target="_blank">LinkedIn</a></div>
+                </div>
+                <div class="container-basic container-flexColumn">
+                    <h2>Christos Chatzakis</h2>
+                    <p>email: </p>
+                    <p>mobile: +44 (0)7</p>
+                    <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="www.linkedin.com/in/anna-kampani-863a75150" target="_blank">LinkedIn</a></div>
+                </div>
+            </div>
+            <div class="container-basic container-flexColumn container-space-around">
+                <input class="text-toggle" type="radio" name="biotogglegroup" value="bioAnna" id="bioAnna" />
+                <label for="bioAnna" alt="BioAnna" title="Anna Kampani Bio" class="text-togle-label" id="bioAnnaLabel">
+                    <span class="line"></span> Bio
+                    
+                </label>
+                <input class="text-toggle" type="radio" name="biotogglegroup" value="bioChristos" id="bioChristos" />
+                <label for="bioChristos" alt="bioChristos" title="Christos Chatzakis Bio" class="text-togle-label" id="bioChristosLabel">
+                    <span class="line"></span> Bio 
+                </label>
+            </div>
+
+            <div class="container-basic container-flexColumn">
+                <p class="hidden" id="bioAnnaText">asfnadadfj;ghRE;KNEGj;eerheghrKrg</p>
+                <p class="hidden" id="bioChristosText">agzagba;iahpAKG'DHALGMG,ADBKMGITJH;AT</p>
+            </div>
+
+        </div>
+
+
+
+
+        </div>
+
+        <!-- Geocoder -->
+        <div id='geocoder' class='geocoder'></div>
+        <div id='map'></div>
+    </section>
+
+    <!-- <div class="footer">
+        <div class="scroll-arrow">
+            <div id="cta">
+                <span class="arrow first next "></span>
+                <span class="arrow second next "></span>
+            </div>
+        </div>
+        <h6>Scroll</h6>
+    </div> -->
+
+
+    <!-- ----------------- SCRIPTS ----------------- -->
+    <script type="text/javascript" defer src="js/contactJsElements.js"></script>
+    <script type="text/javascript" defer src="js/Map.js"></script>
 </body>
 
 </html>

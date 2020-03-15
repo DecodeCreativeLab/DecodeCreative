@@ -114,8 +114,7 @@ p {
 }
 /*  SECTION 1 +navigation */
 .first-wrapper{
-    height: 100%;
-    /* background-color: white; */
+    height: 100%;   
     margin: 0;
     padding: 0;
    
@@ -208,14 +207,11 @@ p {
     background-color: red;
    }
 
-
-
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;
-    background-color: var(--background-colour);
+    min-height: 100vh;  
 }
 
 .title-container {
@@ -231,58 +227,44 @@ p {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;
-    background-color: var(--background-colour);
+    min-width: 100vw;   
 }
 
-.simple-container {
-    display: flex;
-    min-height: 100vh;
-    background-color: var(--background-colour);
-    padding: 5vh;
-    ;
+.project-container-grid{
+    display: grid;
+    padding: 3rem 6rem;
+    height: 80vh;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 1fr 50px;
 }
 
-.free-space {
-    padding: 0 20vh;
+.project-container-grid-top{
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;    
 }
-
-.container-bottom {
-    display: flex;
-    flex-direction: column;
+.project-container-grid-mid{
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;    
     align-items: center;
-    min-height: 100vh;
-    /* background-color: var(--background-colour); */
+    width: max-content;
 }
-
-.container-right {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--background-colour);
-    padding: 5vw;
-}
-
-.container-basic {
-    display: flex;
-    min-width: fit-content;
-}
-
-.container-centreAlign {
+.project-container-grid-bottom{
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;    
     align-items: center;
 }
-
-.container-flexColumn {
-    flex-direction: column;
-}
-
-.container-space-around {
-    justify-content: space-around;
-}
-
+.project-img-container {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+ }
 
 .contact-container {   
-    padding: 2em;
+    padding: 2em 20%;
     display: grid;
     grid-template-columns:30% 40px 1fr ;
     grid-template-rows: 50% 1fr;
@@ -316,8 +298,8 @@ p {
     justify-content: center;
     flex-direction: column;
 }
-.contact-container-grid-cell-end-top{
-    grid-row: 1;
+.contact-container-grid-cell-end{
+    grid-row: 1/2;
     grid-column: 3;
     display: flex;
     justify-content: center;
@@ -325,43 +307,20 @@ p {
     align-items: center;
     padding: 1rem;
 }
-.contact-container-grid-cell-end-bottom{
-    grid-row: 2;
-    grid-column: 3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
+
 
 .contact-container p,
 a {
     font-size: .9rem;
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     margin: 0.3rem 0;
     /* margin: 0; */
     color: var(--text-colour);
+    font-weight: 100;
 }
 
-.heading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: var(--background-colour);
-}
 
-.project-img-container {
-    width: 60vw;
-    height: 60vh;
-    /* align-items: center; */
-    flex-direction: column;
-    display: flex;
-    justify-items: center;
-}
+
 
 
 /*-------------------- TEXT --------------------*/
@@ -379,12 +338,25 @@ a {
     margin: 0;
 }
 
-.project-subtitle {
-    position: relative;
-    bottom: 15%;
-    margin: 0;
+.project-subtitle{
+    color: #fff;
+    background: linear-gradient(to right, #535353 10%, #fff 50%, #9c9c9c 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
 }
-
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
 
 /*-------------------- HEADING ANIMATION --------------------*/
 
@@ -479,11 +451,7 @@ h1::after {
    border-radius: 4px;
 }
 
-.project-button {
-    position: relative;
-    left: -3em;
-    bottom: -4.5em;
-    z-index: 2;
+.project-button {  
     font-size: 4em;
     font-family: var(--font-family-title);
     font-weight: bold;
@@ -617,11 +585,9 @@ h1::after {
     transform: translateX(45px);
 }
 
-.hor-line {
-    position: absolute;
-    width: 20px;
-    left: -30px;
-    top: 50%;
+.hor-line { 
+    margin: 0 5px;   
+    width: 20px;   
     height: 2px;
     background-color: white;
 }
@@ -631,7 +597,7 @@ h1::after {
 
 .project-menu-toggle {
     position: fixed;
-    top: 52vh;
+    top: 50vh;
     width: 50px;
     background-color: rgba(0, 0, 0, 0);
     transition: transform 0.5s, transform 0.5s;
@@ -1128,23 +1094,23 @@ div {
 
 @-webkit-keyframes slide-top {
     0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
     }
     100% {
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
 @keyframes slide-top {
     0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
     }
     100% {
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
 
@@ -1176,25 +1142,25 @@ div {
 }
 
 #perceptiveDatascapes-project-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
 }
 
 #rawbot-project-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
 }
 
 #swapper-project-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
 }
 
 #urbanGrowth-project-img {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/urbanGrowth/urbanGrowthPJimg.png);
 }

@@ -457,6 +457,7 @@ h1::after {
     font-weight: bold;
     color: var(--text-colour);
     background-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1px;
 }
 
 

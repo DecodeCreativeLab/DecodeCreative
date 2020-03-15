@@ -34,65 +34,84 @@
 </head>
 
 <body>
-    <header>
-        <a href="Index.html" class="shadow-pop-tr"></a>
-        <nav class="menu" id="siteNav">
+  <div class="glitch-wrapper">
+    <div class="glitch" data-text="CONTACT">CONTACT</div>
+  </div>
+
+  <section data-title="Decode Creative Technologies Home">   
+    <div class="first-wrapper">     
+      <div></div>
+      <div class="navParent">
+        <div class="navbar">
+          <div class="logo">
+            <a href="Index.html" class="shadow-pop-tr">
+              <img src="images/logo/decod_button.png" alt="logo">
+            </a>
+          </div>
+          <nav class="menu" id="siteNav">
             <ul>
-                <!-- <li><a href="Index.html">Home</a></li> -->
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+              <!-- <li><a href="Index.html">Home</a></li> -->
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-
-
-    <section class="map-container">
-        <div class="glitch-wrapper">
-            <div class="glitch" data-text="CONTACT">CONTACT</div>
+          </nav>
         </div>
-        <div class="contact-container">
-            <div>
-                <div class="container-basic container-flexColumn">
-                    <h2>Anna Kampani</h2>
-                    <p>email: annakampani@yahoo.com</p>
-                    <p>mobile: +44 (0)7753967483</p>
-                    <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="https://www.linkedin.com/in/anna-kampani-863a75150/" target="_blank">LinkedIn</a></div>
-                </div>
-                <div class="container-basic container-flexColumn">
-                    <h2>Christos Chatzakis</h2>
-                    <p>email: </p>
-                    <p>mobile: +44 (0)7</p>
-                    <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="www.linkedin.com/in/anna-kampani-863a75150" target="_blank">LinkedIn</a></div>
-                </div>
-            </div>
-            <div class="container-basic container-flexColumn container-space-around">
-                <input class="text-toggle" type="radio" name="biotogglegroup" value="bioAnna" id="bioAnna" />
-                <label for="bioAnna" alt="BioAnna" title="Anna Kampani Bio" class="text-togle-label" id="bioAnnaLabel">
-                    <span class="line"></span> Bio
-                    
-                </label>
-                <input class="text-toggle" type="radio" name="biotogglegroup" value="bioChristos" id="bioChristos" />
-                <label for="bioChristos" alt="bioChristos" title="Christos Chatzakis Bio" class="text-togle-label" id="bioChristosLabel">
-                    <span class="line"></span> Bio 
-                </label>
-            </div>
+      </div>
 
-            <div class="container-basic container-flexColumn">
-                <p class="hidden" id="bioAnnaText">asfnadadfj;ghRE;KNEGj;eerheghrKrg</p>
-                <p class="hidden" id="bioChristosText">agzagba;iahpAKG'DHALGMG,ADBKMGITJH;AT</p>
+      <div class="contact-container">        
+            <div class="contact-container-grid-cell-top">
+                <h2>Anna Kampani</h2>
+                <p>email: annakampani@yahoo.com</p>
+                <p>mobile: +44 (0)7753967483</p>
+                <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="https://www.linkedin.com/in/anna-kampani-863a75150/" target="_blank">LinkedIn</a></div>
             </div>
+            <div class="contact-container-grid-cell-bottom">
+                <h2>Christos Chatzakis</h2>
+                <p>email: </p>
+                <p>mobile: +44 (0)7</p>
+                <div class="container-basic container-centreAlign"><img src="images/linkedIn.png" class="small-icon" alt="LinkedIn"><a href="www.linkedin.com/in/anna-kampani-863a75150" target="_blank">LinkedIn</a></div>
+            </div>
+        
+        <div class="contact-container-grid-cell-mid-top toggle-parent">
+            <input class="text-toggle" type="radio" name="biotogglegroup" value="bioAnna" id="bioAnna" />
+            <label for="bioAnna" alt="BioAnna" title="Anna Kampani Bio" class="text-togle-label" id="bioAnnaLabel">
+                <span class="line"></span> Bio
+                
+            </label>
+         </div>
+         <div class="contact-container-grid-cell-mid-bottom  toggle-parent">
+          <input class="text-toggle" type="radio" name="biotogglegroup" value="bioChristos" id="bioChristos" />
+          <label for="bioChristos" alt="bioChristos" title="Christos Chatzakis Bio" class="text-togle-label" id="bioChristosLabel">
+              <span class="line"></span> Bio 
+          </label>
+         </div>
+           
+        
 
+        <div class="contact-container-grid-cell-end-top">
+            <p class="hidden" id="bioAnnaText">asfnadadfj;ghRE;KNEGj;eerheghrKrg</p>
+           
         </div>
+        <div class="contact-container-grid-cell-end-bottom">
+          <p class="hidden" id="bioAnnaText">asfnadadfj;ghRE;KNEGj;eerheghrKrg</p>
+ 
+      </div>
+
+    </div>
 
 
 
 
-        </div>
+    </div>
 
-        <!-- Geocoder -->
-        <div id='geocoder' class='geocoder'></div>
-        <div id='map'></div>
-    </section>
+    <!-- Geocoder -->
+    <div id='geocoder' class='geocoder'></div>
+    <div id='map'></div>
+
+      
+    </div>
+  </section>
+
 
     <!-- <div class="footer">
         <div class="scroll-arrow">

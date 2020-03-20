@@ -3,6 +3,25 @@ html, body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-colour);
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-container {
+  /* Always force (mandatory) scrolling to a snap point on the y-axis */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+  /* scroll-snap-stop: normal; */
+  height: 100vh;
 }
 
 
+@supports(scroll-snap-type: both mandatory) {
+  .no-support {
+    display: none;
+  }
+}

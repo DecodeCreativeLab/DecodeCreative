@@ -6,22 +6,23 @@
     --modification-colour: lightgray;
     --deletion-colour: red;
     --colour-link: lightgray;
+    --color-link-hover: grey;
     --button-border: 0.2rem;
     --input-border: 0.1rem;
     --light-border: 0.05rem;
     --text-colour: rgb(255, 255, 255);
-    --font-family-title: 'Roboto';
-    --font-family-subtitle: "Open Sans";
-    --font-family-button: "Roboto";
-    --font-family-input: "Roboto";
-    --font-family-description: "Open Sans";
+    --font-family-title: 'Montserrat', sans-serif;
+    --font-family-subtitle: 'Montserrat', sans-serif;
+    --font-family-button: 'Montserrat', sans-serif;
+    --font-family-input: 'Montserrat', sans-serif;
+    --font-family-description: 'Montserrat', sans-serif;
 }
 
 
 /*-------------------- TAG STYLES --------------------*/
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family-description);
     background-color: var(--background-colour);
     margin: 0; 
     height: 100vh;
@@ -73,7 +74,7 @@ h1 {
     display: block;
     margin: 0 0 0 0;
     font-size: 4rem;
-    font-weight: 1200;
+    font-weight: 100;
     letter-spacing: .1em;
     z-index: 1;
     /* text-shadow: 0px 1px 1px rgb(94, 94, 94); */
@@ -221,7 +222,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100vh;  
+    flex-direction: column;
+    margin: 1em;;
+    /* min-height: 100vh;   */
 }
 
 .title-container {
@@ -255,10 +258,11 @@ p {
 }
 .project-container-grid-mid{
     grid-row: 2;
-    grid-column: 1;
+    grid-column: 2;
     display: flex;    
     align-items: center;
-    width: max-content;
+    justify-content: center;
+    /* width: max-content; */
 }
 .project-container-grid-bottom{
     grid-row: 3;
@@ -323,7 +327,7 @@ p {
 .contact-container p,
 a {
     font-size: .9rem;
-    font-family: "Open Sans";
+    font-family: var(--font-family-title);
     margin: 0.3rem 0;
     /* margin: 0; */
     color: var(--text-colour);
@@ -351,7 +355,7 @@ a {
 
 .project-subtitle{
     color: #fff;
-    background: linear-gradient(to right, #535353 10%, #fff 50%, #9c9c9c 60%);
+    background: linear-gradient(to right, #8f8f8f 10%, #fff 50%, #d4d4d4 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -360,7 +364,7 @@ a {
     /* text-fill-color: transparent; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
+    animation: textclip 3.5s linear infinite;
     display: inline-block;
 }
 @keyframes textclip {
@@ -432,7 +436,7 @@ h1::after {
     padding: 8px 15px;
     color: var(--colour-link);
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 0.8em;
     transition: all 0.5s;
     /* border: 1px solid var(--colour-link); */
@@ -465,10 +469,10 @@ h1::after {
 .project-button {  
     font-size: 4em;
     font-family: var(--font-family-title);
-    font-weight: bold;
+    font-weight: 100;
     color: var(--text-colour);
     background-color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px;
+    /* -webkit-text-stroke: 1px; */
     z-index: 5;
 }
 
@@ -1148,7 +1152,7 @@ div {
 
 /*---------------------------- IMAGE EFFECTS ----------------------------*/  
 .i {
-    width: 100px;
+    width: 150px;
     height: 100%;
     /* display: inline-block;
     position: relative; */
@@ -1158,7 +1162,7 @@ div {
     -webkit-transition: all 1.3s ease-in-out;
     transition: all 1.3s ease-in-out;
     background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png);
-    background-attachment: ;
+    background-attachment: fixed;
     background-repeat: repeat;
     background-size: cover;
     background-position: 50% 100%;

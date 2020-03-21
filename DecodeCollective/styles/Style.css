@@ -54,7 +54,7 @@ body {
     background: none;
 }
 
-body > section {
+section {
     height: 100vh;
     scroll-snap-align: center;
 
@@ -129,32 +129,37 @@ p {
 /*  SECTION 1 +navigation */
 
 
-   .above-nav{
-     height: 100px;
-   }
+   /*.above-nav{
+     height: 0.05vh;
+   }*/
 
 
-   .fixed-nav {
+  /* .fixed-nav {
        position: fixed;
        left: 0;
        top: 20px;
        width: 100%;
        z-index: 100;
-   }
+   }*/
 
-   .navParent {
+   /*.navParent {
      position: -webkit-sticky;
      position: sticky;
+     position: fixed;
      top: 20px;
      width: 100%;
-   }
+   }*/
    .navbar {
+    position: fixed;
+    top: 20px;
+    width: 100%;
      display: flex;
      justify-content: space-between;
+     
    }
    .logo img{
      width: 80px;
-     margin-left: 40px
+     margin-left: 20px
    }
    .menu {
      display: flex;

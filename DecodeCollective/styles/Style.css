@@ -38,8 +38,7 @@ body {
 
 .scroll-item {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;
-   
+    scroll-snap-stop: normal;   
 }
 
 
@@ -334,7 +333,9 @@ a {
     font-weight: 100;
 }
 
-
+.overlay{
+    position: fixed;
+}
 
 
 
@@ -472,7 +473,7 @@ h1::after {
     font-weight: 100;
     color: var(--text-colour);
     background-color: rgba(0, 0, 0, 0);
-    /* -webkit-text-stroke: 1px; */
+    text-decoration: none;
     z-index: 5;
 }
 
@@ -603,7 +604,7 @@ h1::after {
 
 .hor-line { 
     margin: 0 5px;   
-    width: 20px;   
+    width: 30px;   
     height: 2px;
     background-color: white;
 }
@@ -1153,28 +1154,22 @@ div {
 /*---------------------------- IMAGE EFFECTS ----------------------------*/  
 .i {
     width: 150px;
-    height: 100%;
-    /* display: inline-block;
-    position: relative; */
+    height: 100%;  
     display: flex;
-    z-index: 2;
-    /* padding: 2px; */
+    z-index: 2;   
     -webkit-transition: all 1.3s ease-in-out;
-    transition: all 1.3s ease-in-out;
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png);
-    background-attachment: fixed;
+    transition: all 1.3s ease-in-out;    
+    /* background-attachment: fixed;
     background-repeat: repeat;
-    background-size: cover;
-    background-position: 50% 100%;
-    border-radius: 0%;
-    /* box-shadow: inset 0px 10px 150px 10px rgba(0,0,0,0.8); */
+    background-size: cover;   */
+    border-radius: 0%;     
+  
 }
 .i:hover {
     -webkit-transition: all 0s linear;
     transition: all 0s linear;
     opacity: 0;
 }
-  
 
 /*---------------------------- IMAGES ----------------------------*/
 .small-icon {
@@ -1184,58 +1179,57 @@ div {
 }
 
 #perceptiveDatascapes-project-img {
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     background-image: url(../images/perceptiveDatascapes/projectImageBack.png);
-    box-shadow: inset 0px 0px 150px 60px rgba(0,0,0,0.8);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.perceptive-overlay{
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+    background-position: 50% 50%;
 }
 
 #rawbot-project-img {
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
-.i-rawbot {
-    width: 40px;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    padding: 2px;
-    -webkit-transition: all 1.3s ease-in-out;
-    transition: all 1.3s ease-in-out;
+.rawbot-overlay {   
     background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
-    background-size: cover;
-    background-position: 50% 100%;
-    border-radius: 0%;
-  }
+    background-position: 50% 50%;
+}
 
 #swapper-project-img {
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
-.i-swapper {
-    width: 40px;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    padding: 2px;
-    -webkit-transition: all 1.3s ease-in-out;
-    transition: all 1.3s ease-in-out;
+.swapper-overlay {    
     background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
-    background-size: cover;
-    background-position: 50% 100%;
-    border-radius: 0%;
-  }
+    background-position: 50% 50%;
+}
 
 #urbanGrowth-project-img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/urbanGrowth/urbanGrowthPJimg.png);
-    box-shadow: inset 0px 0px 150px 60px rgba(0,0,0,0.9);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-image: url(../images/urbanGrowth/urbanGrowthPJimgBlack.png);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
+.urbanGrowth-overlay {    
+    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
+    background-position: 50% 50%;
+}
+
 
 #highways1 {
     background-image: url(../images/highways/1remimage1080p1.png);

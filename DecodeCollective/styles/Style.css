@@ -225,16 +225,8 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin: 1em;;
+    margin: 1em;
     /* min-height: 100vh;   */
-}
-
-.title-container {
-    font-size: 0;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 0.4rem;
-    margin: 5vh;
 }
 
 .central-container {
@@ -325,7 +317,6 @@ p {
     padding: 1rem;
 }
 
-
 .contact-container p,
 a {
     font-size: .9rem;
@@ -342,6 +333,10 @@ a {
     right: 50px;
 }
 
+.centralise{
+    display: flex;
+    align-items: center;
+}
 
 
 /*-------------------- TEXT --------------------*/

@@ -12,44 +12,47 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+  <div class="scroll-container">
 
-<!-- Landing media -->
-  <section data-title="Decode Creative Technologies Home">
-    <div class="first-wrapper">
-      <div class="above-nav"></div>
-      <div class="navParent">
-        <div class="navbar">
-          <div class="logo">
-            <picture>
-              <img src="images/logo/decod_button.png" alt="logo">
-            </picture>
-          </div>
-          <nav class="menu" id="siteNav">
-            <ul>
+    <!-- Landing media -->
+    <section class="scroll-item" data-title="Decode Creative Technologies Home">
+      <div class="first-wrapper">
+        <div class="above-nav"></div>
+        <div class="navParent">
+          <div class="navbar">
+            <div class="logo">
+              <picture>
+                <img src="images/logo/decod_button.png" alt="logo">
+              </picture>
+            </div>
+            <nav class="menu" id="siteNav">
+              <ul>
                 <!-- <li><a href="Index.html">Home</a></li> -->
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                <li><a href="projects.html">Projects.</a></li>
+                <li><a href="projects.html">About.</a></li>
+                <li><a href="contact.html">Contact.</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
+        <div class="scroll_btn">
+        </div>
+
       </div>
-      <div class ="scroll_btn">
-    </div>
-
-    </div>
 
 
-  </section>
+    </section>
 
-  <!-- About section -->
+    <!-- About section -->
 
-  <section id="about" data-title="About">
-    <div class ="generic-wrapper second-wrapper">
+    <section class="scroll-item" id="about" data-title="About">
+      <div class="generic-wrapper second-wrapper">
         <div class="mid-grid">
           <h1>Slogan</h1>
           <a class="btns" href="/about.html">More info about the team</a>
@@ -57,37 +60,38 @@
         <div class="bottom-grid">
           <a class="arrow-btn" href="#projects"><span class="arrow-down"></span>Scroll</a>
         </div>
-    </div>
-  </section>
-
-
-
-  <!-- Projects Section -->
-
-  <section  id="projects" data-title="Projects">
-    <div  class ="generic-wrapper third-wrapper">
-      <div class="mid-grid">
-        <h1>Projects</h1>
-        <a class="btns" href="/projects.html">Find more about our work</a>
       </div>
-      <div class="bottom-grid">
-        <a class="arrow-btn" href="#Contact"><span class="arrow-down"></span>Scroll</a>
+    </section>
+
+
+
+    <!-- Projects Section -->
+
+    <section class="scroll-item" id="projects" data-title="Projects">
+      <div class="generic-wrapper third-wrapper">
+        <div class="mid-grid">
+          <h1>Projects</h1>
+          <a class="btns" href="/projects.html">Find more about our work</a>
+        </div>
+        <div class="bottom-grid">
+          <a class="arrow-btn" href="#Contact"><span class="arrow-down"></span>Scroll</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact section -->
-  <section id="contact" data-title="Contact">
-    <div class ="generic-wrapper fourth-wrapper">
-      <div class="mid-grid">
-        <h1>Contact<h1>
-        <a class="btns" href="/contact.html">Talk to us</a>
-      </div>
-  </section>
+    <!-- Contact section -->
+    <section class="scroll-item" id="contact" data-title="Contact">
+      <div class="generic-wrapper fourth-wrapper">
+        <div class="mid-grid">
+          <h1>Contact<h1>
+              <a class="btns" href="/contact.html">Talk to us</a>
+        </div>
+    </section>
 
-
+  </div>
 
 </body>
 <script src="/js/scroll-arrow.js"></script>
 <script src="/js/sticky_nav.js"></script>
+
 </html>

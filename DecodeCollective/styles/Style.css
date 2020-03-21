@@ -24,7 +24,7 @@
 body {
     font-family: var(--font-family-description);
     background-color: var(--background-colour);
-    margin: 0; 
+    margin: 0;
     height: 100vh;
     overflow: hidden;
 }
@@ -43,15 +43,11 @@ body {
 
 
 /* disable selection highlight */
-
 ::selection {
     color: none;
     background: none;
 }
-
-
 /* For Mozilla Firefox */
-
 ::-moz-selection {
     color: none;
     background: none;
@@ -59,7 +55,9 @@ body {
 
 section {
     height: 100vh;
-    position: relative;
+    scroll-snap-align: center;
+
+
 }
 
 header {
@@ -129,33 +127,38 @@ p {
 }
 /*  SECTION 1 +navigation */
 
-   
-   .above-nav{
-     height: 100px;
-   }
-   
-   
-   .fixed-nav {
+
+   /*.above-nav{
+     height: 0.05vh;
+   }*/
+
+
+  /* .fixed-nav {
        position: fixed;
        left: 0;
        top: 20px;
        width: 100%;
        z-index: 100;
-   }
-   
-   .navParent {
+   }*/
+
+   /*.navParent {
      position: -webkit-sticky;
      position: sticky;
+     position: fixed;
      top: 20px;
      width: 100%;
-   }
+   }*/
    .navbar {
+    position: fixed;
+    top: 20px;
+    width: 100%;
      display: flex;
      justify-content: space-between;
+     
    }
    .logo img{
      width: 80px;
-     margin-left: 40px
+     margin-left: 20px
    }
    .menu {
      display: flex;
@@ -174,30 +177,30 @@ p {
    }
    /*----nd of section 1--------*/
    .generic-wrapper{
-   
+
      height: 100%;
      margin: 0;
      padding: 0;
      display:grid;
      grid-template-rows: 10% 1fr 10%;
      grid-template-columns: 1fr;
-   
+
    }
-   
+
    .top-grid{
      grid-row:1;
      display:flex;
      justify-content: center;
      align-items: center;
    }
-   
+
    .bottom-grid{
      grid-row:3;
      display:flex;
      justify-content: center;
      align-items: center;
    }
-   
+
    .mid-grid{
      grid-row:2;
      display:flex;
@@ -206,7 +209,7 @@ p {
      align-items: center;
    }
    /*---unique characteristics of each section--- */
-   
+
    .second-wrapper{
     background-color: green;
    }
@@ -239,7 +242,7 @@ p {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;   
+    min-width: 100vw;
 }
 
 .project-container-grid{
@@ -253,12 +256,12 @@ p {
 .project-container-grid-top{
     grid-row: 1;
     grid-column: 1;
-    display: flex;    
+    display: flex;
 }
 .project-container-grid-mid{
     grid-row: 2;
     grid-column: 2;
-    display: flex;    
+    display: flex;
     align-items: center;
     justify-content: center;
     /* width: max-content; */
@@ -266,7 +269,7 @@ p {
 .project-container-grid-bottom{
     grid-row: 3;
     grid-column: 2;
-    display: flex;    
+    display: flex;
     align-items: center;
 }
 .project-img-container {
@@ -277,7 +280,7 @@ p {
     overflow: hidden;
  }
 
-.contact-container {   
+.contact-container {
     padding: 2em 20%;
     display: grid;
     grid-template-columns:30% 40px 1fr ;
@@ -467,7 +470,7 @@ h1::after {
    border-radius: 4px;
 }
 
-.project-button {  
+.project-button {
     font-size: 4em;
     font-family: var(--font-family-title);
     font-weight: 100;
@@ -659,7 +662,7 @@ text set in the data-text attribute. */
     width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     top: 50px;
     height: fit-content;
     z-index: 0;
@@ -706,7 +709,7 @@ text set in the data-text attribute. */
 }
 
 
-/* Creates an animation with 20 steaps. For each step, it calculates 
+/* Creates an animation with 20 steaps. For each step, it calculates
   a percentage for the specific step. It then generates a random clip
   box to be used for the random glitch effect. Also adds a very subtle
   skew to change the 'thickness' of the glitch.*/
@@ -1151,7 +1154,7 @@ div {
 }
 
 
-/*---------------------------- IMAGE EFFECTS ----------------------------*/  
+/*---------------------------- IMAGE EFFECTS ----------------------------*/
 .i {
     width: 150px;
     height: 100%;  

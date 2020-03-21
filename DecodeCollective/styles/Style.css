@@ -23,28 +23,30 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-colour);
-    margin: 0;
+    margin: 0;  
+
+   overflow-y: scroll;
+    scroll-snap-type: y mandatory; 
+   
 }
 
 
 /* disable selection highlight */
-
 ::selection {
     color: none;
     background: none;
 }
-
-
 /* For Mozilla Firefox */
-
 ::-moz-selection {
     color: none;
     background: none;
 }
 
-section {
+body > section {
     height: 100vh;
-    position: relative;
+    scroll-snap-align: center; 
+    
+    
 }
 
 header {

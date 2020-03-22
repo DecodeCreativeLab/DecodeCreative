@@ -406,10 +406,11 @@ a {
 }
 .grid-heading{
     grid-row: 1;
-    grid-column: 2/4;
+    grid-column: 1/4;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    padding-left: 100px;
 }
 .grid-body{
     grid-row: 2;
@@ -1139,7 +1140,7 @@ div {
 
 /* ----- Project Images ---- */
 #pc-wallpaper{
-    background-image: url(../images/perceptiveDatascapes/projectImageInitial.png);
+    background-image: url(../images/perceptiveDatascapes/nightlights.png);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;

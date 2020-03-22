@@ -544,6 +544,7 @@ a {
 
 .fade-in{
     animation: fadeIn 3.5s linear ;
+    text-shadow: 1px 1px 1px grey;
 }
 @keyframes fadeIn {
     0%{
@@ -1146,7 +1147,7 @@ div {
     background-repeat: no-repeat;
 }
 #pc-grid{
-    background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    background-image: url(../images/perceptiveDatascapes/intensity.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -1158,6 +1159,13 @@ div {
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;    
+}
+#pc-full-image1{
+    background-image: url(../images/perceptiveDatascapes/analytics.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;    
+  
 }
 #vr-video{    
     background-size: contain;

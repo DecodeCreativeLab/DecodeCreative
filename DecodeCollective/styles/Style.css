@@ -510,7 +510,7 @@ a {
 }
 .project-title{
     position: fixed;
-    left: -70px;
+    left: -30px;
     bottom: 110px;
     font-size: 0.8rem;
     transform: rotate(-90deg);
@@ -1157,13 +1157,58 @@ div {
     background-image: url(../images/perceptiveDatascapes/pctop.png);
     background-size: cover;
     background-position: center;   
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;    
 }
 #vr-video{    
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;
+    width: 100%;
+}
+
+#ug-wallpaper{
+    background-image: url(../images/urbanGrowth/Picture1.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca1{
+    background-image: url(../images/urbanGrowth/untitled.67.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca2{
+    background-image: url(../images/urbanGrowth/untitled.71.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca3{
+    background-image: url(../images/urbanGrowth/untitled.68.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca4{
+    background-image: url(../images/urbanGrowth/untitled.69.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ug-full-image{
+    background-image: url(../images/urbanGrowth/fullscreenimage.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;   
 }
 
 #highways1 {

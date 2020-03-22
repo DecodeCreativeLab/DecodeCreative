@@ -59,6 +59,8 @@ body {
 section {
     height: 100vh;
     scroll-snap-align: center;
+    z-index: 1;
+    width: 100vw;
 }
 
 header {
@@ -160,6 +162,7 @@ hr{
 .hidden {
     display: none !important;
 }
+
 /*  SECTION 1 +navigation */
 
 
@@ -436,7 +439,9 @@ a {
     display: grid;
     width: 100vw;
     height: 50vh;    
-    margin-bottom: 4em;
+    /* margin-bottom: 4em; */
+    padding-bottom: 4em;
+    background-color: var(--background-colour);
 }
 .grid-images-background-up{
     grid-column: 1/-1;
@@ -465,6 +470,27 @@ a {
     grid-column: 4;
     display: flex;
     justify-content: space-between;
+}
+
+.next-project{   
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    text-decoration: none;
+}
+.next-project a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.next-project-gap{
+    width: 100vw;
+    height: 50vh;
 }
 
 /*-------------------- TEXT --------------------*/
@@ -513,6 +539,18 @@ a {
 
 .scroll{
     font-size: 0.8rem;
+}
+
+.fade-in{
+    animation: fadeIn 3.5s linear ;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /*-------------------- HEADING ANIMATION --------------------*/
@@ -1101,7 +1139,7 @@ div {
 
 /* ----- Project Images ---- */
 #pc-wallpaper{
-    background-image: url(../images/perceptiveDatascapes/cover.jpg);
+    background-image: url(../images/perceptiveDatascapes/projectImageInitial.png);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
@@ -1114,7 +1152,13 @@ div {
     background-position: center;   
     background-repeat: no-repeat;
 }
-
+#pc-full-image{
+    background-image: url(../images/perceptiveDatascapes/pctop.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+    
+}
 #vr-video{    
     background-size: contain;
     background-position: center;   

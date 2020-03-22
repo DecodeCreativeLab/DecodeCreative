@@ -26,6 +26,9 @@ body {
     background-color: var(--background-colour);
     margin: 0;
     height: 100vh;
+    
+}
+.body-restriction{
     overflow: hidden;
 }
 
@@ -56,8 +59,6 @@ body {
 section {
     height: 100vh;
     scroll-snap-align: center;
-
-
 }
 
 header {
@@ -79,10 +80,10 @@ h1 {
 
 h2 {
     font-family: var(--font-family-title);
-    font-weight: normal;
+    font-weight: 100;
     color: var(--text-colour);
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 }
 
 h3 {
@@ -90,6 +91,15 @@ h3 {
     font-weight: bold;
     font-family: var(--font-family-title);
     margin: 0;
+}
+
+h5{
+    margin: 0;    
+    color: var( --color-link-hover);
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family: var(--font-family-subtitle);
+    margin-top: 5px;
 }
 
 h6 {
@@ -261,7 +271,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     min-width: 100vw;
 }
 
@@ -377,6 +387,66 @@ a {
     margin-left: 20px ;
 }
 
+/* ---------- Project specific ---------- */
+.project-wallpaper{
+    height: 80vh;
+}
+.project-description{
+    background-color: white;
+    color: rgb(25, 27, 27);
+    display: grid;
+    grid-template-columns:20% 1fr 15% 20% ;
+    grid-template-rows: 20% 1fr 20%;
+}
+.project-description p,  .project-description h1{
+    color: rgb(25, 27, 27);
+}
+.grid-heading{
+    grid-row: 1;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-body{
+    grid-row: 2;
+    grid-column: 2;
+    align-items: center;
+    display: flex;    
+    text-align: justify;
+    padding: 0 10%;
+}
+.grid-body p{
+    line-height: 1.7;
+}
+.grid-index{
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-size: 0.5em;
+}
+
+.grid-images{
+    grid-template-columns: auto 30% auto 30% auto;
+    grid-row: 1fr;
+    display: grid;
+}
+.grid-images-left{
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.grid-images-right{
+    grid-row: 1;
+    grid-column: 4;
+    display: flex;
+    justify-content: space-between;
+}
+
 /*-------------------- TEXT --------------------*/
 
 .description {
@@ -390,6 +460,15 @@ a {
     text-align: justify;
     font-weight: 100;
     margin: 0;
+}
+.project-title{
+    position: fixed;
+    left: -70px;
+    bottom: 110px;
+    font-size: 0.8rem;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
 }
 
 .project-subtitle{
@@ -648,7 +727,7 @@ h1::after {
     margin: 0 5px;   
     width: 30px;   
     height: 2px;
-    background-color: white;
+    background-color: rgb(238, 238, 238);
 }
 
 
@@ -736,7 +815,8 @@ h1::after {
 }
 
 .next {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    /* background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==); */
+    background-image: url(../images/arrow.png)
 }
 
 @keyframes bounceAlpha {
@@ -946,6 +1026,7 @@ div {
     margin-right: 5px;
 }
 
+/* ----- Project Wallpaper Images ---- */
 #perceptiveDatascapes-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
@@ -998,6 +1079,19 @@ div {
     background-position: 50% 50%;
 }
 
+/* ----- Project Images ---- */
+#pc-wallpaper{
+    background-image: url(../images/perceptiveDatascapes/cover.jpg);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+
+#vr-video{    
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
 
 #highways1 {
     background-image: url(../images/highways/1remimage1080p1.png);

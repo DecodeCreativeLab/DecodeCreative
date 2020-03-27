@@ -62,6 +62,7 @@ section {
     scroll-snap-align: center;
     z-index: 1;
     width: 100vw;
+    background-color: var(--background-colour);
 }
 
 header {
@@ -162,6 +163,19 @@ hr{
 
 .hidden {
     display: none !important;
+}
+
+.free-space{
+    width: 100vw;
+    height: 20vh;
+    background-color: white;
+}
+
+.light-background{
+    background-color: white;
+}
+.dark-background{
+    background-color: var(--background-colour);
 }
 
 /*  SECTION 1 +navigation */
@@ -1164,6 +1178,10 @@ div {
     opacity: 0;
 }
 
+.offset-image{
+    margin: 20vh;
+}
+
 /*---------------------------- IMAGES ----------------------------*/
 .small-icon {
     width: 20px;
@@ -1247,7 +1265,7 @@ div {
 }
 #pc-full-image1{
     background-image: url(../images/perceptiveDatascapes/analytics.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;    
   
@@ -1257,6 +1275,8 @@ div {
     background-position: center;   
     background-repeat: no-repeat;
     width: 100%;
+    height: 100%;
+    overflow: hidden;    
 }
 
 #ug-wallpaper{
@@ -1299,9 +1319,10 @@ div {
 }
 #ug-full-image{
     background-image: url(../images/urbanGrowth/fullscreenimage.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;   
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;  
+    
 }
 
 #highways1 {

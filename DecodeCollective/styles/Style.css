@@ -1012,14 +1012,14 @@ h1::after {
     animation-timing-function: linear;
 }
 
-.scroll-arrow:hover .arrow {
+.scroll-arrow .arrow {
     animation-name: bounceAlpha;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.scroll-arrow:hover .arrow.first {
+.scroll-arrow .arrow.first {
     animation-name: bounceAlpha;
     animation-duration: 1.4s;
     animation-delay: 0.2s;

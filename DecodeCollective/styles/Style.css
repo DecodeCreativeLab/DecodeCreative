@@ -271,7 +271,11 @@ hr{
     background-color: blue;
    }
    .fourth-wrapper{
-    background-color: red;
+    
+     position: absolute;
+     align-self: center;
+       
+    
    }
 
 .container {
@@ -1002,30 +1006,30 @@ h1::after {
 
 .bounceAlpha {
     animation-name: bounceAlpha;
-    animation-duration: 1.4s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .arrow.first.bounceAlpha {
     animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-delay: 0.2s;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.scroll-arrow:hover .arrow {
+.scroll-arrow .arrow {
     animation-name: bounceAlpha;
-    animation-duration: 1.4s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-.scroll-arrow:hover .arrow.first {
+.scroll-arrow .arrow.first {
     animation-name: bounceAlpha;
-    animation-duration: 1.4s;
-    animation-delay: 0.2s;
+    animation-duration: 1.5s;
+    animation-delay: 0.4s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }

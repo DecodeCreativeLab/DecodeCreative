@@ -38,6 +38,7 @@ body {
     scroll-snap-type: y mandatory;
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .scroll-item {
@@ -284,7 +285,9 @@ hr{
 .container p{
     margin: 5px;;
 }
-
+.body-container{
+    background-color: var(--background-colour);
+}
 .central-container {
     display: flex;
     align-items: center;
@@ -1250,6 +1253,30 @@ div {
     background-repeat: no-repeat;
 }
 #pc-grid{
+    background-image: url(../images/perceptiveDatascapes/axonometric1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid1{
+    background-image: url(../images/perceptiveDatascapes/optimization.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid2{
+    background-image: url(../images/perceptiveDatascapes/evaluations.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid3{
     background-image: url(../images/perceptiveDatascapes/intensity.png);
     width: 100%;
     height: 100%;
@@ -1264,10 +1291,11 @@ div {
     background-repeat: no-repeat;    
 }
 #pc-full-image1{
-    background-image: url(../images/perceptiveDatascapes/analytics.png);
-    background-size: cover;
+    background-image: url(../images/perceptiveDatascapes/modelssmall.jpg);
+    background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;    
+    margin: 20vh 0;
   
 }
 #vr-video{    

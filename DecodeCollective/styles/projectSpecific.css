@@ -1,4 +1,6 @@
-/* ----- Project Images ---- */
+/* ------------------ Project Images ---------------------- */
+
+/* ---- Perceptive datascapes ---- */
 #pc-wallpaper{
     background-image: url(../images/perceptiveDatascapes/nightlights.png);
     background-size: cover;
@@ -64,6 +66,8 @@
     background-repeat: no-repeat;    
 }
 
+
+/* ---- Urban Growth ---- */
 #ug-wallpaper{
     background-image: url(../images/urbanGrowth/Picture1.png);
     background-size: cover;
@@ -117,36 +121,46 @@
     
 }
 
-#highways1 {
-    background-image: url(../images/highways/1remimage1080p1.png);
-    background-size: contain;
-    /* box-shadow: inset 0px 0px 150px 60px rgba(0,0,0,0.8); */
-    background-repeat: no-repeat;
-}
 
-#myVideo {
-    min-width: 100%;
-    min-height: 100%;
-    /* box-shadow: inset 0px 0px 500px 200px rgba(22,22,22,0.8); */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
-#highways2 {
-    background-image: url(../images/highways/Navigation1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-}
-
-#highways3 {
-    background-image: url(../images/highways/highways3.png);
+/* ---- Geospatial Analytics ---- */
+#pc-wallpaper{
+    background-image: url(../images/perceptiveDatascapes/dataAnalytics.jpg);
     background-size: cover;
+    background-position: center;   
     background-repeat: no-repeat;
 }
 
-#highways4 {
-    background-image: url(../images/highways/highways4.png);
+
+#gi-grid{
+    background-image: url(../images/geospatialInfographics/diagram1.jpg);
+    width: 100%;
+    height: 100%;
     background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#gi-grid1{
+    background-image: url(../images/geospatialInfographics/diagram2.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#gi-grid2{
+    background-image: url(../images/geospatialInfographics/diagram3.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#gi-grid3{
+    background-image: url(../images/geospatialInfographics/diagram4.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
     background-repeat: no-repeat;
 }

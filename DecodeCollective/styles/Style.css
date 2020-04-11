@@ -265,6 +265,7 @@ hr{
 
    .second-wrapper{
     background-color: green;
+    background-image: url('../images/landingPage/about_pic.png');
    }
    .third-wrapper{
     background-color: blue;
@@ -1187,7 +1188,7 @@ div {
     opacity: 0.5;
 }
 .opacity1{
-    opacity:0.6;
+    opacity:0.75;
 }
 
 .vr-video{    

@@ -109,6 +109,13 @@
     background-repeat: no-repeat;  
     
 }
+#ug-full-image1{
+    background-image: url(../images/urbanGrowth/falcon.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
 
 #highways1 {
     background-image: url(../images/highways/1remimage1080p1.png);

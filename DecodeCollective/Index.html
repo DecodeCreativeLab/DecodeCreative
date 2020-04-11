@@ -19,26 +19,39 @@
 
     <!-- Landing media -->
     <section data-title="Decode Creative Technologies Home">
-      <div class="first-wrapper fixed-nav ">
-        <!-- <div class="above-nav"></div> -->
-        <!-- <div class="navParent"> -->
-          <div class="navbar">
-            <div class="logo">
-              <picture>
-                <img src="images/logo/decod_button.png" alt="logo">
-              </picture>
-            </div>
-            <nav class="menu" id="siteNav">
-              <ul>
-                <!-- <li><a href="Index.html">Home</a></li> -->
-                <li><a href="projects.html">Projects.</a></li>
-                <li><a href="about.html">About.</a></li>
-                <li><a href="contact.html">Contact.</a></li>
-              </ul>
-            </nav>
+      <div class="generic-wrapper">
+
+        <div class="navbar">
+          <div class="logo">
+            <picture>
+              <img src="images/logo/decod_button.png" alt="logo">
+            </picture>
           </div>
-        <!-- </div>  -->
-        <div class="scroll_btn">
+          <nav class="menu" id="siteNav">
+            <ul>
+              <!-- <li><a href="Index.html">Home</a></li> -->
+              <li><a href="projects.html">Projects.</a></li>
+              <li><a href="about.html">About.</a></li>
+              <li><a href="contact.html">Contact.</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="full-grid">
+          <video autoplay muted  class="opacity1 vr-video">
+            <source src="/images/landingPage/brain scan.mp4" type="video/mp4">
+        </video>
+      </div>     
+          
+
+       <div class="mid-grid">  
+            <h1>We are Decode Creative</h1>
+            <h3>a computational design and creativity studio.</h3>
+              
+       </div>
+        
+       
+       <div class="scroll_btn">
         </div>
 
       </div>
@@ -51,7 +64,7 @@
     <section class="scroll-item" id="about" data-title="About">
       <div class="generic-wrapper second-wrapper">
         <div class="mid-grid">
-          <h1>Slogan</h1>
+          <h1>We analyse what is real<br>and create the illusion.</h1>
           <button class="btn btn-3" onclick="window.location.href ='/about.html'">
             <span>About the team.</span>
           </button>
@@ -75,17 +88,21 @@
     </section>
 
     <!-- Contact section -->
-    <section class="scroll-item" id="contact" data-title="Contact">
-     
-      <video autoplay muted loop style="object-fit: cover; z-index: -1;">
-        <source src="/material/mesh_face/faces.mp4" type="video/mp4"></source>
-      </video>
+    <section class="scroll-item central-container" id="contact" data-title="Contact">  
+          
 
-      <div class="generic-wrapper fourth-wrapper">        
+      <div class="generic-wrapper">   
+        
+        <div class="full-grid">
+          <video autoplay muted loop  class="opacity vr-video">
+            <source src="/material/mesh_face/faces.mp4" type="video/mp4">
+        </video>
+      </div>
+        
         <div class="mid-grid">  
           <h1>Contact</h1>
             <button class="btn btn-3" onclick="window.location.href ='/contact.html'">
-              <span>Contact us.</span>
+              <span>We 'd love to hear your voice</span>
             </button>
         </div>
     </section>

@@ -1,0 +1,152 @@
+/* ----- Project Images ---- */
+#pc-wallpaper{
+    background-image: url(../images/perceptiveDatascapes/nightlights.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid{
+    background-image: url(../images/perceptiveDatascapes/axonometric1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid1{
+    background-image: url(../images/perceptiveDatascapes/isovist.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid2{
+    background-image: url(../images/perceptiveDatascapes/evaluations.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-grid3{
+    background-image: url(../images/perceptiveDatascapes/intensity.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#pc-full-image{
+    background-image: url(../images/perceptiveDatascapes/pctop.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;    
+}
+#pc-full-image1{
+    background-image: url(../images/perceptiveDatascapes/modelssmall.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;    
+    /* margin: 20vh 0; */
+  
+}
+#pc-full-image2{
+    background-image: url(../images/perceptiveDatascapes/surfaces.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;   
+}
+#pc-offset-image{
+    background-image: url(../images/perceptiveDatascapes/finalgeom.jpg);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;    
+}
+
+#ug-wallpaper{
+    background-image: url(../images/urbanGrowth/Picture1.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca1{
+    background-image: url(../images/urbanGrowth/untitled.67.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca2{
+    background-image: url(../images/urbanGrowth/untitled.71.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca3{
+    background-image: url(../images/urbanGrowth/untitled.68.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ca4{
+    background-image: url(../images/urbanGrowth/untitled.69.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#ug-full-image{
+    background-image: url(../images/urbanGrowth/fullscreenimage.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
+#ug-full-image1{
+    background-image: url(../images/urbanGrowth/falcon.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
+
+#highways1 {
+    background-image: url(../images/highways/1remimage1080p1.png);
+    background-size: contain;
+    /* box-shadow: inset 0px 0px 150px 60px rgba(0,0,0,0.8); */
+    background-repeat: no-repeat;
+}
+
+#myVideo {
+    min-width: 100%;
+    min-height: 100%;
+    /* box-shadow: inset 0px 0px 500px 200px rgba(22,22,22,0.8); */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#highways2 {
+    background-image: url(../images/highways/Navigation1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+#highways3 {
+    background-image: url(../images/highways/highways3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#highways4 {
+    background-image: url(../images/highways/highways4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -9,6 +9,7 @@
 
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../styles/Style.css">
+    <link rel="stylesheet" href="../styles/projectSpecific.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -38,100 +39,104 @@
     </div>
 
     <div class="body-container">
-    <section class="central-container project-wallpaper" id="pc-wallpaper">
-        <h2 class="fade-in">Geospatial Analytics To Data Driven Design</h2>
-    </section>
-    <section class="project-description project-wallpaper">
-        <div class="grid-heading">
-            <h1>Perceptive Datascapes</h1>
+        <section class="central-container project-wallpaper" id="pc-wallpaper">
+            <h2 class="fade-in">Geospatial Analytics To Data Driven Design</h2>
+        </section>
+        <section class="project-description project-wallpaper">
+            <div class="grid-heading">
+                <h1>Perceptive Datascapes</h1>
+            </div>
+            <div class="grid-body">
+                <p>This research reflects upon principles of physical connectivity and visual perception as the means to
+                    evaluate
+                    and generate new spatial configurations for contemporary urban systems. The aim is to explore the
+                    possibility of
+                    constructing a computational analytic model, termed “Perceptive Machine”, which could function as an
+                    additional
+                    layer in the design process by mining, analysing and visualising geo-spatial data in a virtual 3D
+                    space.
+                    This system helps in the creation of new topographies which encourage the interplay between human
+                    and
+                    inhuman intelligence in an environment of hybrid cyberspace. Hypervirtuality,
+                    the analysis and evaluation of a set of multidimensional continuous data in Virtual Reality could
+                    challenge the way people perceive the urban fabric. This immersive space that mixes real and virtual
+                    offers the necessary ground for this analytic workflow to expand beyond computation into a gradient
+                    of
+                    experiences.
+                </p>
+            </div>
+            <div class="grid-index">
+                <h5>KEYWORDS</h5>
+                <h5>Urban Analytics</h5>
+                <h5>Visual Perception</h5>
+                <h5>VR development</h5>
+                <h5>Data Driven Design</h5>
+                <h5>Machine Learning</h5>
+            </div>
+        </section>
+        <!------- IMAGE GRID ------>
+        <div class="grid-images">
+            <div class="grid-images-background-up"></div>
+            <div class="grid-images-background-down"></div>
+            <div class="grid-images-left">
+                <div id="pc-grid"></div>
+            </div>
+            <div class="grid-images-right">
+                <div id="pc-grid1"></div>
+            </div>
         </div>
-        <div class="grid-body">
-            <p>This research reflects upon principles of physical connectivity and visual perception as the means to
-                evaluate
-                and generate new spatial configurations for contemporary urban systems. The aim is to explore the
-                possibility of
-                constructing a computational analytic model, termed “Perceptive Machine”, which could function as an
-                additional
-                layer in the design process by mining, analysing and visualising geo-spatial data in a virtual 3D space.
-                This system helps in the creation of new topographies which encourage the interplay between human and
-                inhuman intelligence in an environment of hybrid cyberspace. Hypervirtuality,
-                the analysis and evaluation of a set of multidimensional continuous data in Virtual Reality could
-                challenge the way people perceive the urban fabric. This immersive space that mixes real and virtual
-                offers the necessary ground for this analytic workflow to expand beyond computation into a gradient of
-                experiences.
-            </p>
+        <div class="grid-images">
+            <div class="grid-images-background-down"></div>
+            <div class="grid-images-background-down-w"></div>
+            <div class="grid-images-left">
+                <div id="pc-grid2"></div>
+            </div>
+            <div class="grid-images-right">
+                <div id="pc-grid3"></div>
+            </div>
         </div>
-        <div class="grid-index">
-            <h5>KEYWORDS</h5>
-            <h5>Urban Analytics</h5>
-            <h5>Visual Perception</h5>
-            <h5>VR development</h5>
-            <h5>Data Driven Design</h5>
-            <h5>Machine Learning</h5>
-        </div>
-    </section>
-    <!------- IMAGE GRID ------>
-    <div class="grid-images">
-        <div class="grid-images-background-up"></div>
-        <div class="grid-images-background-down"></div>
-        <div class="grid-images-left">
-            <div id="pc-grid"></div>          
-        </div>
-        <div class="grid-images-right">
-            <div id="pc-grid1"></div>
-        </div>        
-    </div>
-    <div class="grid-images">
-        <div class="grid-images-background-down"></div>
-        <div class="grid-images-background-down-w"></div>
-        <div class="grid-images-left">
-            <div id="pc-grid2"></div>            
-        </div>
-        <div class="grid-images-right">
-            <div id="pc-grid3"></div>
-        </div>        
-    </div>
-    <!--end of image grid-->
+        <!--end of image grid-->
 
-    <div class="free-space dark-background"></div>
+        <div class="free-space dark-background"></div>
 
-    <!------- VIDEO ------>
-    <section>
-        <video autoplay muted loop  id="vr-video">
-            <source src="../images/perceptiveDatascapes/videos/evaluation.mp4" type="video/mp4">
-        </video>
-    </section>
+        <section>
+            <video autoplay muted loop class="vr-video" id="vr-video">
+                <source src="../images/perceptiveDatascapes/videos/overview.mp4" type="video/mp4">
+            </video>
+        </section>
 
-    <div class="free-space dark-background"></div> 
+        <div class="free-space dark-background"></div>
 
-    <!------- FULLSCREEN IMAGE ------>   
-    <section id="pc-full-image1">        
-    </section>
+        <!------- FULLSCREEN IMAGE ------>
+        <section id="pc-full-image1">
+        </section>
 
-    <section>
-        <video autoplay muted loop  id="vr-video">
-            <source src="../images/perceptiveDatascapes/videos/evaluation.mp4" type="video/mp4">
-        </video>
-    </section>
-    
-    <div class="free-space dark-background"></div>
+        <!------- VIDEO ------>
+        <section class="central-container ">
+            <video autoplay muted loop class="margin-video" id="vr-video">
+                <source src="../images/perceptiveDatascapes/videos/patternsOptimisation.mp4" type="video/mp4">
+            </video>           
+        </section>
 
-     <!------- HALFSCREEN IMAGE ------>
-     <section class="central-container">        
+        <!------- HALFSCREEN IMAGE ------>
+        <!-- <section class="central-container">        
          <div class="offset-image" id="pc-offset-image"> </div>
-    </section>
+    </section> -->
 
-    <div class="free-space dark-background"></div>
+        <div class="free-space "></div>
+        <section id="pc-full-image2" class="light-background">
+        </section>
 
+        <div class="free-space "></div>
 
-    <section id="pc-full-image">        
-    </section>
-    
-    <div class="project-title">
-        <span class="hor-line"></span>
-        <h6 class="scroll project-subtitle">Perceptive Datascapes</h6>
+        <section id="pc-full-image">
+        </section>
+
+        <div class="project-title">
+            <span class="hor-line"></span>
+            <h6 class="scroll project-subtitle">Perceptive Datascapes</h6>
+        </div>
     </div>
-</div>
     <div class="footer">
         <div class="scroll-arrow">
             <div id="cta">
@@ -148,7 +153,7 @@
     </div>
 
     <!-- ----------------- SCRIPTS ----------------- -->
-   
+
 </body>
 
 

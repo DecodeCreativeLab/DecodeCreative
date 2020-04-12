@@ -178,3 +178,10 @@
     background-position: center;   
     background-repeat: no-repeat;  
 }
+
+#gi-full-image{
+    background-image: url(../images/geospatialInfographics/all\ to\ all\ cyan.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
+}

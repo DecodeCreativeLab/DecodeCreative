@@ -560,7 +560,7 @@ a {
 
 .fade-in{
     animation: fadeIn 3.5s linear ;
-    text-shadow: 1px 1px 1px grey;
+    text-shadow: 1px 1px 1px black;
 }
 @keyframes fadeIn {
     0%{

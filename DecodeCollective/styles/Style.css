@@ -1248,13 +1248,13 @@ div {
 #rawbot-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    background-image: url(../images/rawbot/20180829_RenderBW.jpg);
     box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
     background-position: 50% 50%;
     background-attachment: fixed;
 }
 .rawbot-overlay {   
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Render.jpg) repeat fixed;
     background-position: 50% 50%;
 }
 
@@ -1281,6 +1281,19 @@ div {
 }
 .urbanGrowth-overlay {    
     background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
+    background-position: 50% 50%;
+}
+
+#geospatialanalytics-project-img {
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-image: url(../images/geospatialInfographics/visualFieldBW.png);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+.geospatial-overlay {    
+    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) repeat fixed;
     background-position: 50% 50%;
 }
 

@@ -124,8 +124,8 @@
 
 
 /* ---- Geospatial Analytics ---- */
-#pc-wallpaper{
-    background-image: url(../images/perceptiveDatascapes/dataAnalytics.jpg);
+#gi-wallpaper{
+    background-image: url(../images/geospatialInfographics/dataAnalytics.jpg);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@
 
 
 #gi-grid{
-    background-image: url(../images/geospatialInfographics/diagram1.jpg);
+    background-image: url(../images/geospatialInfographics/ligthing.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -141,7 +141,7 @@
     background-repeat: no-repeat;
 }
 #gi-grid1{
-    background-image: url(../images/geospatialInfographics/diagram2.jpg);
+    background-image: url(../images/geospatialInfographics/masterplankmeans.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -149,7 +149,7 @@
     background-repeat: no-repeat;
 }
 #gi-grid2{
-    background-image: url(../images/geospatialInfographics/diagram3.jpg);
+    background-image: url(../images/geospatialInfographics/tsnevisual.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -157,7 +157,7 @@
     background-repeat: no-repeat;
 }
 #gi-grid3{
-    background-image: url(../images/geospatialInfographics/diagram4.jpg);
+    background-image: url(../images/geospatialInfographics/pca1.png);
     width: 100%;
     height: 100%;
     background-size: cover;

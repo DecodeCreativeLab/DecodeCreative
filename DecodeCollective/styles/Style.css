@@ -43,7 +43,7 @@ body {
 
 .scroll-item {
     scroll-snap-align: start;
-    scroll-snap-stop: normal;   
+    scroll-snap-stop: normal;
 }
 
 
@@ -100,7 +100,7 @@ h3 {
 }
 
 h5{
-    margin: 0;    
+    margin: 0;
     color: var( --color-link-hover);
     font-size: 0.8rem;
     font-weight: 100;
@@ -109,7 +109,7 @@ h5{
 }
 
 h6 {
-    margin: 0;    
+    margin: 0;
     color: var(--colour-link);
     font-size: 1rem;
     font-weight: 100;
@@ -136,13 +136,13 @@ p {
 }
 
 /* ----------------- Divider--------- */
-hr{        
+hr{
     width: 100%;
     height: 3px;
     border: none;
     margin: 10px 0px 10px 0px;
-    border-top: 3px solid white; 
-    
+    border-top: 3px solid white;
+
 }
 .divider{
     animation: animateleft 2s;
@@ -150,14 +150,14 @@ hr{
 
 @keyframes animateleft{
     0%{
-        margin-right:50px; 
-        width: 0;       
+        margin-right:50px;
+        width: 0;
         opacity: 0;
     }
     100%{
         margin-right:0;
-        width: 100%; 
-        opacity: 1;        
+        width: 100%;
+        opacity: 1;
     }
 }
 
@@ -183,7 +183,7 @@ hr{
 /*  SECTION 1 +navigation */
 
 
-  
+
    .navbar {
     position: fixed;
     top: 20px;
@@ -253,7 +253,7 @@ hr{
     text-shadow: 1px 1px rgb(37, 37, 37);
     color: white;
    }
-   
+
 
    .full-grid{
        grid-row: -1/1;
@@ -264,7 +264,7 @@ hr{
    .full-grid-no-flex{
     grid-row: -1/1;
     grid-column: -1/1;
-    
+
 }
    /*---unique characteristics of each section--- */
 
@@ -275,7 +275,7 @@ hr{
    .third-wrapper{
     background-color: blue;
    }
- 
+
 
 .container {
     display: flex;
@@ -400,7 +400,7 @@ a {
     align-items: center;
 }
 
-.counter{    
+.counter{
     position: fixed;
     top: 50vh;
     width: 50px;
@@ -437,7 +437,7 @@ a {
     grid-row: 2;
     grid-column: 2;
     align-items: center;
-    display: flex;    
+    display: flex;
     text-align: justify;
     padding: 0 10%;
 }
@@ -452,7 +452,7 @@ a {
     justify-content: center;
     padding-left: 50px;
     font-size: 0.5em;
-    
+
 }
 
 .grid-images{
@@ -460,7 +460,7 @@ a {
     grid-template-rows: 50% 1fr;
     display: grid;
     width: 100vw;
-    height: 50vh;    
+    height: 50vh;
     /* margin-bottom: 4em; */
     padding-bottom: 4em;
     background-color: var(--background-colour);
@@ -494,7 +494,7 @@ a {
     justify-content: space-between;
 }
 
-.next-project{   
+.next-project{
     position: fixed;
     bottom: 0;
     width: 100vw;
@@ -692,7 +692,7 @@ h1::after {
     position: relative;
     background: none;
     border: none;
-    color: #fff;    
+    color: #fff;
     cursor: pointer;
     margin: 20px 30px;
     background: rgba(0, 0, 0, 0);
@@ -712,9 +712,9 @@ h1::after {
     position: absolute;
     transition: all 0.2s linear;
     background: #fff;
-    
+
   }
-  
+
   .btn>span::before, .btn>span::after{
     content:"";
     width:2px;
@@ -750,7 +750,7 @@ h1::after {
     left: 0;
     top: 0;
   }
-  
+
   .btn-3:hover::after{
     transition-delay: 0s;
   }
@@ -763,7 +763,7 @@ h1::after {
   .btn-3:hover span::before{
     transition-delay: 0.6s;
   }
-  
+
 
 .project-button {
     font-size: 4em;
@@ -900,9 +900,9 @@ h1::after {
     transform: translateX(45px);
 }
 
-.hor-line { 
-    margin: 0 5px;   
-    width: 30px;   
+.hor-line {
+    margin: 0 5px;
+    width: 30px;
     height: 2px;
     background-color: rgb(238, 238, 238);
 }
@@ -970,7 +970,7 @@ h1::after {
 
 #cta {
     width: 100%;
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 #cta .arrow {
@@ -1179,16 +1179,16 @@ div {
 /*---------------------------- IMAGE EFFECTS ----------------------------*/
 .i {
     width: 150px;
-    height: 100%;  
+    height: 100%;
     display: flex;
-    z-index: 2;   
+    z-index: 2;
     -webkit-transition: all 1.3s ease-in-out;
-    transition: all 1.3s ease-in-out;    
+    transition: all 1.3s ease-in-out;
     /* background-attachment: fixed;
     background-repeat: repeat;
     background-size: cover;   */
-    border-radius: 0%;     
-  
+    border-radius: 0%;
+
 }
 .i:hover {
     -webkit-transition: all 0s linear;
@@ -1208,24 +1208,24 @@ div {
     opacity:0.90;
 }
 
-.vr-video{    
+.vr-video{
     background-size: cover;
     object-fit: cover;
-    background-position: center;   
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
-.margin-video{    
+.margin-video{
     background-size: cover;
     object-fit: cover;
-    background-position: center;   
+    background-position: center;
     background-repeat: no-repeat;
     width: 65%;
     height: 65%;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 
@@ -1253,13 +1253,13 @@ div {
 #rawbot-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    background-image: url(../images/rawbot/20180829_RenderBW.jpg);
     box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
     background-position: 50% 50%;
     background-attachment: fixed;
 }
-.rawbot-overlay {   
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+.rawbot-overlay {
+    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Render.jpg) repeat fixed;
     background-position: 50% 50%;
 }
 
@@ -1271,7 +1271,7 @@ div {
     background-position: 50% 50%;
     background-attachment: fixed;
 }
-.swapper-overlay {    
+.swapper-overlay {
     background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
     background-position: 50% 50%;
 }
@@ -1284,7 +1284,7 @@ div {
     background-position: 50% 50%;
     background-attachment: fixed;
 }
-.urbanGrowth-overlay {    
+.urbanGrowth-overlay {
     background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
     background-position: 50% 50%;
 }
@@ -1292,11 +1292,11 @@ div {
 #about-photo{
     background-image: url(../images/landingPage/about_pic.png);
     background-size: cover;
-    background-position: center;   
-    background-repeat: no-repeat;   
+    background-position: center;
+    background-repeat: no-repeat;
     width:100%;
     height: 100%;
-    
+
 }
 
 #slideshow{
@@ -1305,8 +1305,8 @@ div {
 
 .slide{
     background-size: cover;
-    background-position: center;   
-    background-repeat: no-repeat;   
+    background-position: center;
+    background-repeat: no-repeat;
     width:100%;
     height: 100%;
     position: absolute;
@@ -1330,5 +1330,3 @@ div {
 #sli-child6{
     background-image: url(../images/landingPage/slideshow/sl6.png);
 }
-
-

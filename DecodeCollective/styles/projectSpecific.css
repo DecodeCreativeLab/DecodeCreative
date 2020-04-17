@@ -141,7 +141,7 @@
     background-repeat: no-repeat;
 }
 #gi-grid1{
-    background-image: url(../images/geospatialInfographics/masterplankmeans.jpg);
+    background-image: url(../images/geospatialInfographics/kmeanspcacombined.jpg);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -163,4 +163,25 @@
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
+}
+
+#gi-full-image1{
+    background-image: url(../images/geospatialInfographics/axodata1.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
+}
+
+#gi-full-image2{
+    background-image: url(../images/geospatialInfographics/mapspurple.jpg);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
+}
+
+#gi-full-image{
+    background-image: url(../images/geospatialInfographics/all\ to\ all\ cyan.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
 }

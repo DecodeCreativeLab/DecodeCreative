@@ -173,6 +173,12 @@ hr{
     background-color: white;
 }
 
+.free-space-s{
+    width: 100vw;
+    height: 5vh;
+    background-color: white;
+}
+
 .light-background{
     background-color: white;
 }
@@ -455,6 +461,26 @@ a {
 
 }
 
+.split-background{
+    grid-template-columns: auto 40% 3% 40% auto;
+    grid-template-rows: 50% 1fr;
+    display: grid;
+    width: 100vw;
+    height: 100vh;   
+}
+.split-background-top{
+    grid-column: 1/-1;
+    grid-row: 1;    
+}
+.split-background-bottom{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+.split-background-img{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
 .grid-images{
     grid-template-columns: auto 30% 3% 30% auto;
     grid-template-rows: 50% 1fr;
@@ -462,7 +488,7 @@ a {
     width: 100vw;
     height: 50vh;
     /* margin-bottom: 4em; */
-    padding-bottom: 4em;
+    
     background-color: var(--background-colour);
 }
 .grid-images-background-up{
@@ -479,6 +505,11 @@ a {
     grid-column: 1/-1;
     grid-row: 1;
     background-color:  var(--background-colour);
+}
+.grid-images-background-up-w{
+    grid-column: 1/-1;
+    grid-row: 2;
+    background-color: white;
 }
 .grid-images-left{
     grid-row: 1/-1;
@@ -1200,6 +1231,12 @@ div {
     width: 70%;
     height: 70%;
 }
+.short-image{
+    width: 100vw;
+    height: 50vh;
+    scroll-snap-align: center;
+    z-index: 1;
+}
 /*---------------------------- VIDEO EFFECTS ----------------------------*/
 .opacity{
     opacity: 1;
@@ -1240,53 +1277,77 @@ div {
 #perceptiveDatascapes-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/perceptiveDatascapes/projectImageBack.png);
-    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    background-image: url(../images/perceptiveDatascapes/project1BW.jpg);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
+    background-size: contain;
 }
+
 .perceptive-overlay{
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/project1.jpg) repeat fixed;
     background-position: 50% 50%;
+    background-size: contain;
+}
+
+#geospatialanalytics-project-img {
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    background-image: url(../images/geospatialInfographics/visualFieldBW.png);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20, 0.4);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: contain;
+}
+.geospatial-overlay{
+    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) repeat fixed;
+    background-position: 50% 50%;
+    background-size: contain;
 }
 
 #rawbot-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-image: url(../images/rawbot/20180829_RenderBW.jpg);
-    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    box-shadow: inset 0px 0px 100px 100px rgba(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
+    background-size: contain;
 }
 .rawbot-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Render.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) repeat fixed;
     background-position: 50% 50%;
+    background-size: contain;
 }
 
 #swapper-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-image: url(../images/perceptiveDatascapes/projectImage.png);
-    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
+    background-size: contain;
 }
 .swapper-overlay {
     background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
     background-position: 50% 50%;
+    background-size: contain;
 }
 
 #urbanGrowth-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
     background-image: url(../images/urbanGrowth/urbanGrowthPJimgBlack.png);
-    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20);
+    box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
+    background-size: contain;
 }
 .urbanGrowth-overlay {
     background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
     background-position: 50% 50%;
+    background-size: contain;
 }
 
 #about-photo{

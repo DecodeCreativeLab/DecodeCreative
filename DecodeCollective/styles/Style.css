@@ -99,6 +99,16 @@ h3 {
     z-index: 2;
 }
 
+h4 {
+    color: var(--colour-link);
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: var(--font-family-title);
+    margin: 0 15vw;
+    z-index: 2;
+}
+
+
 h5{
     margin: 0;
     color: var( --color-link-hover);
@@ -131,7 +141,7 @@ input:focus,
 p {
     color: var(--text-colour);
     font-family: var(--font-family-description);
-    font-size: small;
+    font-size: normal;
     font-weight: 200;
 }
 
@@ -418,6 +428,8 @@ a {
     margin-left: 20px ;
 }
 
+
+
 /* ---------- Project specific ---------- */
 .project-wallpaper{
     height: 80vh;
@@ -569,6 +581,14 @@ a {
     transform: rotate(-90deg);
     display: flex;
     align-items: center;
+}
+
+.text-centre{
+    text-align: center;
+}
+
+.text-black{
+    color: var(--background-colour);
 }
 
 .project-subtitle{

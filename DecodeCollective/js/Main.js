@@ -66,7 +66,7 @@ scrollArrow.addEventListener('click', function(e) {
     }
 });
 
-const prjctbtns =document.querySelectorAll('.project-button');
+const prjctbtns =document.querySelectorAll('.');
 function scrollToNextElement(){
     let currentIndex = currentel.innerText;
     

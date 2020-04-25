@@ -66,4 +66,6 @@ scrollArrow.addEventListener('click', function(e) {
     }
 });
 
+//--------------------------------------- SCROLL TO NEXT SECTION ----------------------------------------//
+
 

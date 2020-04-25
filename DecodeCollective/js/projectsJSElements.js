@@ -1,5 +1,33 @@
 const currentel = document.querySelector("#current-project");
 const divider = document.querySelector("#divider");
+const scrollbutton = document.querySelector(".scroll-arrow");
+const footer = document.querySelector(".footer");
+const prjctbtns =document.querySelectorAll('.project-button');
+const scrolltxt = document.querySelector('#scroll-text');
+
+
+scrollbutton.addEventListener('click', scrollToNextElement);
+footer.addEventListener('click', scrollToNextElement);
+
+function scrollToNextElement(){
+    let currentIndex = currentel.innerText;
+    
+    if(currentIndex<prjctbtns.length){
+        prjctbtns[currentIndex].scrollIntoView();
+        if(currentIndex==prjctbtns.length-1){
+            scrollbutton.style.transform = 'rotate(270deg)';
+            scrolltxt.innerText = "Back To Top";
+        }
+    }
+    else{
+        prjctbtns[0].scrollIntoView();
+        scrollbutton.style.transform = 'rotate(90deg)';
+        scrolltxt.innerText = "Scroll";
+
+
+    }
+    
+}
 
 //------------------------- WAIT TO LOAD THE WHOLE PAGE -------------------------//
 // let loader = document.getElementById('loader');
@@ -53,10 +81,12 @@ function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
         if (entry.intersectionRatio >= 1) {             
             currentel.innerText =  entry.target.getAttribute('index');  
-            entry.target.classList.remove("slide-top");   
+            // entry.target.classList.remove("slide-top");   
+            
             divider.classList.remove("divider");   
             setTimeout(function(){ 
-                entry.target.classList.add("slide-top");   
+                // entry.target.classList.add("slide-top");   
+               
                 divider.classList.add("divider");   
             }, 200);
         }

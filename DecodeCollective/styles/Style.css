@@ -407,6 +407,10 @@ a {
     text-decoration: none
 }
 
+.full-a{
+    width: 100%;
+    height: 100%;
+}
 .overlay{
     position: absolute;
     top: 0;
@@ -558,6 +562,7 @@ a {
 .next-project-gap{
     width: 100vw;
     height: 50vh;
+    display: flex;
 }
 
 /*-------------------- TEXT --------------------*/
@@ -1314,6 +1319,12 @@ div {
     background-size: contain;
 }
 
+.next-project-pc{
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/nightlights.png) no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
 #geospatialanalytics-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
@@ -1330,7 +1341,7 @@ div {
 }
 
 .next-project-gi{
-    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) no-repeat;
+    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/dataAnalytics.jpg) no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
@@ -1349,6 +1360,13 @@ div {
     background-position: 50% 50%;
     background-size: contain;
 }
+
+.next-project-ra{
+    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
 
 #swapper-project-img {
     /* background-size: cover;

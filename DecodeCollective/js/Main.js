@@ -66,6 +66,27 @@ scrollArrow.addEventListener('click', function(e) {
     }
 });
 
+const prjctbtns =document.querySelectorAll('.project-button');
+function scrollToNextElement(){
+    let currentIndex = currentel.innerText;
+    
+    if(currentIndex<prjctbtns.length){
+        prjctbtns[currentIndex].scrollIntoView();
+        if(currentIndex==prjctbtns.length-1){
+            scrollbutton.style.transform = 'rotate(270deg)';
+            scrolltxt.innerText = "Back To Top";
+        }
+    }
+    else{
+        prjctbtns[0].scrollIntoView();
+        scrollbutton.style.transform = 'rotate(90deg)';
+        scrolltxt.innerText = "Scroll";
+
+
+    }
+    
+}
+
 //--------------------------------------- SCROLL TO NEXT SECTION ----------------------------------------//
 
 

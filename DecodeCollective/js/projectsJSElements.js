@@ -9,6 +9,8 @@ const scrolltxt = document.querySelector('#scroll-text');
 scrollbutton.addEventListener('click', scrollToNextElement);
 footer.addEventListener('click', scrollToNextElement);
 
+
+
 function scrollToNextElement(){
     let currentIndex = currentel.innerText;
     
@@ -81,6 +83,15 @@ function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
         if (entry.intersectionRatio >= 1) {             
             currentel.innerText =  entry.target.getAttribute('index');  
+            if(currentel.innerText == prjctbtns.length){
+                scrollbutton.style.transform = 'rotate(270deg)';
+                scrolltxt.innerText = "Back To Top";
+            }
+            else{
+                scrollbutton.style.transform = 'rotate(90deg)';
+                scrolltxt.innerText = "Scroll";
+        
+            }
             // entry.target.classList.remove("slide-top");   
             
             divider.classList.remove("divider");   

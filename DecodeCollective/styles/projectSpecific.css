@@ -321,3 +321,64 @@
     background-position: center;   
     background-repeat: no-repeat;
 }
+
+/* ---- Swapper ---- */
+#sw-wallpaper{
+    background-image: url(../images/swapper/);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#sw-grid{
+    background-image: url(../images/swapper/);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#sw-grid1{
+    background-image: url(../images/swapper/);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#sw-grid2{
+    background-image: url(../images/swapper/);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#sw-grid3{
+    background-image: url(../images/swapper/);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+#sw-full-image{
+    background-image: url(../images/urbanGrowth/fullscreenimage.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
+#sw-full-image1{
+    background-image: url(../images/urbanGrowth/layout1.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
+#sw-full-image2{
+    background-image: url(../images/urbanGrowth/falcon.png);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}

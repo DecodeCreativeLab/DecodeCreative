@@ -1107,7 +1107,7 @@ h1::after {
 /*-------------------- SCROLLBAR --------------------*/
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1123,7 +1123,7 @@ h1::after {
 div {
     scrollbar-color: black white;
     scrollbar-width: thin;
-    scrollbar-width: 4px;
+    scrollbar-width: 6px;
 }
 
 ::-ms-scrollbar-track {
@@ -1444,6 +1444,12 @@ div {
     background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
+}
+
+.next-project-ug{
+    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/Picture1.png) no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
 }
 
 #about-photo{

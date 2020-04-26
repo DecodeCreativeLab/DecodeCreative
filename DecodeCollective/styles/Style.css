@@ -1292,6 +1292,11 @@ div {
     overflow: hidden;
 }
 
+.contained-video{
+    background-size: contain;
+    object-fit: contain;
+}
+
 
 /*---------------------------- IMAGES ----------------------------*/
 .small-icon {

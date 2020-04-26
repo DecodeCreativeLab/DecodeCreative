@@ -6,22 +6,30 @@
 //     document.body.classList.add('imgloaded');
 // });
 
+const prjctbtns =document.querySelectorAll('.scroll-item');
+let currentel ="";
+const scrolltxt = document.querySelector('#scroll-text');
+const scrollbutton = document.querySelector(".scroll-arrow");
+const footer = document.querySelector(".footer");
+
+
+
 
 //------------------------- TRIGGER ANIMATIONS WHEN ELEMENT IS IN VIEWPORT -------------------------//
-let boxElement = document.querySelector(".show-on-scroll");
-
 const numSteps = 20.0;
 // Set things up
 window.addEventListener("load", (event) => {
-    boxElement = document.querySelector(".show-on-scroll");
-    if (boxElement != undefined) {
-        createObserver();
+    boxElement = document.querySelectorAll(".scroll-item");
+    for (let i = 0; i < boxElement.length; i++) {
+        if (boxElement[i] != undefined) {            
+            createObserver(boxElement[i]);
+        }
     }
 
 }, false);
 
 
-function createObserver() {
+function createObserver(element) {
     let observer;
 
     let options = {
@@ -31,7 +39,7 @@ function createObserver() {
     };
 
     observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(boxElement);
+    observer.observe(element);
 }
 
 function buildThresholdList() {
@@ -49,26 +57,31 @@ function buildThresholdList() {
 
 function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
-        if (entry.intersectionRatio >= 1) {
-            entry.target.classList.toggle("is-visible");
+                if (entry.intersectionRatio >= 0.9) {           
+            
+            currentel =  entry.target.getAttribute('index');  
+            if(currentel == prjctbtns.length){
+                scrollbutton.style.transform = 'rotate(270deg)';
+                scrolltxt.innerText = "Back To Top";
+            }
+            else{
+                scrollbutton.style.transform = 'rotate(90deg)';
+                scrolltxt.innerText = "Scroll";
+        
+            }
+                       
         }
     });
 }
 //--------------------------------------------------------------------------------------------------//
 
-const scrollArrow = document.querySelector(".scroll-arrow");
-const smallArrows = document.querySelectorAll(".arrow");
-scrollArrow.addEventListener('click', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    for (let i = 0; i < smallArrows.length; i++) {
-        smallArrows[i].classList.toggle("bounceAlpha");
-    }
-});
 
-const prjctbtns =document.querySelectorAll('.');
+//--------------------------------------- SCROLL TO NEXT SECTION ----------------------------------------//
+scrollbutton.addEventListener('click', scrollToNextElement);
+footer.addEventListener('click', scrollToNextElement);
+
 function scrollToNextElement(){
-    let currentIndex = currentel.innerText;
+    let currentIndex = currentel;
     
     if(currentIndex<prjctbtns.length){
         prjctbtns[currentIndex].scrollIntoView();
@@ -87,6 +100,6 @@ function scrollToNextElement(){
     
 }
 
-//--------------------------------------- SCROLL TO NEXT SECTION ----------------------------------------//
+//--------------------------------------------------------------------------------------------------//
 
 

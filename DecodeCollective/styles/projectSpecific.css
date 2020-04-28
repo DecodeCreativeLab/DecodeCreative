@@ -195,14 +195,14 @@
 
 /* ---- Rawbot ---- */
 #ra-wallpaper{
-    background-image: url(../images/rawbot/20180901_Render5.jpg);
+    background-image: url(../images/Rawbot/20180901_Render5.jpg);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
 }
 
 #ra-grid{
-    background-image: url(../images/rawbot/DSCF7856.JPG);
+    background-image: url(../images/Rawbot/DSCF7856.JPG);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -210,7 +210,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid1{
-    background-image: url(../images/rawbot/DSCF7849.JPG);
+    background-image: url(../images/Rawbot/DSCF7849.JPG);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -218,7 +218,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid2{
-    background-image: url(../images/rawbot/DSCF7856.JPG);
+    background-image: url(../images/Rawbot/DSCF7856.JPG);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -226,7 +226,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid3{
-    background-image: url(../images/rawbot/untitled.1273.png);
+    background-image: url(../images/Rawbot/untitled.1273.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -235,14 +235,14 @@
 }
 
 #ra-full-image1{
-    background-image: url(../images/rawbot/20180313_AR-03.jpg);
+    background-image: url(../images/Rawbot/20180313_AR-03.jpg);
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;  
 }
 
 #ra-full-image2{
-    background-image: url(../images/rawbot/20180901_Render2.jpg);
+    background-image: url(../images/Rawbot/20180901_Render2.jpg);
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat; 
@@ -250,7 +250,7 @@
 }
 
 #ra-full-image3{
-    background-image: url(../images/rawbot/IMG_94991.jpg);
+    background-image: url(../images/Rawbot/IMG_94991.jpg);
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat; 
@@ -259,20 +259,20 @@
 
 
 #ra-full-image{
-    background-image: url(../images/rawbot/wholeStructure.1367.png);
+    background-image: url(../images/Rawbot/wholeStructure.1367.png);
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;  
 }
 #ra-full-image4{
-    background-image: url(../images/rawbot/20180829_Render.jpg);
+    background-image: url(../images/Rawbot/20180829_Render.jpg);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;  
 }
 
 #ra-grid4{
-    background-image: url(../images/rawbot/untitled.1430.png);
+    background-image: url(../images/Rawbot/untitled.1430.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -280,7 +280,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid5{
-    background-image: url(../images/rawbot/untitled.1433.png);
+    background-image: url(../images/Rawbot/untitled.1433.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -288,7 +288,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid6{
-    background-image: url(../images/rawbot/untitled.1437.png);
+    background-image: url(../images/Rawbot/untitled.1437.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -296,7 +296,7 @@
     background-repeat: no-repeat;
 }
 #ra-grid7{
-    background-image: url(../images/rawbot/untitled.1443.png);
+    background-image: url(../images/Rawbot/untitled.1443.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -305,7 +305,7 @@
 }
 
 #ra-grid8{
-    background-image: url(../images/rawbot/ml1.png);
+    background-image: url(../images/Rawbot/ml1.png);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -314,7 +314,7 @@
 }
 
 #ra-grid9{
-    background-image: url(../images/rawbot/ml2.png);
+    background-image: url(../images/Rawbot/ml2.png);
     width: 100%;
     height: 100%;
     background-size: cover;

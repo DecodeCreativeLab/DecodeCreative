@@ -76,7 +76,7 @@ h1 {
     position: relative;
     display: block;
     margin: 0 0 0 0;
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 100;
     letter-spacing: .1em;
     z-index: 1;
@@ -141,17 +141,22 @@ input:focus,
 p {
     color: var(--text-colour);
     font-family: var(--font-family-description);
-    font-size: normal;
+    font-size: 1.1vw;
     font-weight: 200;
 }
 
 p>a{
     font-family: var(--font-family-description);
-    font-size: normal;
+    font-size: 1.1vw;
     font-weight: 200;
     text-decoration: none;
 }
 
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+    color: rgb(88, 88, 88);
+ }
 
 /* ----------------- Divider--------- */
 hr{
@@ -473,6 +478,7 @@ a {
     display: flex;
     text-align: justify;
     padding: 0 10%;
+    max-height: 100%;   
 }
 .grid-body p{
     line-height: 1.7;
@@ -1318,7 +1324,7 @@ div {
 }
 /*---------------------------- VIDEO EFFECTS ----------------------------*/
 .opacity{
-    opacity: 1;
+    opacity: 0.6;
 }
 .opacity1{
     opacity:0.90;
@@ -1371,7 +1377,7 @@ div {
 }
 
 .perceptive-overlay{
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/project1.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/project1.jpg) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1392,7 +1398,7 @@ div {
     background-size: contain;
 }
 .geospatial-overlay{
-    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1406,20 +1412,20 @@ div {
 #rawbot-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/rawbot/20180829_RenderBW.jpg);
+    background-image: url(../images/Rawbot/20180829_RenderBW.jpg);
     box-shadow: inset 0px 0px 100px 100px rgba(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: contain;
 }
 .rawbot-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
 
 .next-project-ra{
-    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) no-repeat;
+    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }
@@ -1435,7 +1441,7 @@ div {
     background-size: contain;
 }
 .swapper-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1450,7 +1456,7 @@ div {
     background-size: contain;
 }
 .urbanGrowth-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1488,7 +1494,7 @@ div {
     background-image: url(../images/landingPage/slideshow/sl1.JPG);
     }
 #sli-child2{
-    background-image: url(../images/landingPage/slideshow/sl2.JPG);
+    background-image: url(../images/landingPage/slideshow/sl2.jpg);
   }
 #sli-child3{
     background-image: url(../images/landingPage/slideshow/sl3.png);

@@ -361,22 +361,29 @@
     background-position: center;   
     background-repeat: no-repeat;
 }
+#sw-half-image{
+    background-image: url(../images/Swapper/TOIXOS.png);
+    background-size: contain;
+    background-position: center;   
+    background-repeat: no-repeat;  
+    
+}
 #sw-full-image{
-    background-image: url(../images/urbanGrowth/fullscreenimage.png);
-    background-size: cover;
+    background-image: url(../images/Swapper/diagram.png);
+    background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;  
     
 }
 #sw-full-image1{
-    background-image: url(../images/urbanGrowth/layout1.png);
+    background-image: url(../images/Swapper/map_tab.png);
     background-size: contain;
     background-position: center;   
     background-repeat: no-repeat;  
     
 }
 #sw-full-image2{
-    background-image: url(../images/urbanGrowth/falcon.png);
+    background-image: url(../images/Swapper/Screenshot.png);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;  

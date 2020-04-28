@@ -45,7 +45,7 @@ function handleIntersect(entries, observer) {
         if (entry.intersectionRatio >= 0.05) {
    
             //entry.target.classList.remove("slide-top");   
-            console.log(entry.target);
+           
 
             if (entry.target.getAttribute('status') == 'slide') {
                 entry.target.classList.add("slide-top");

@@ -152,6 +152,11 @@ p>a{
     text-decoration: none;
 }
 
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+    color: rgb(88, 88, 88);
+ }
 
 /* ----------------- Divider--------- */
 hr{

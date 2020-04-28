@@ -1411,20 +1411,20 @@ div {
 #rawbot-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/rawbot/20180829_RenderBW.jpg);
+    background-image: url(../images/Rawbot/20180829_RenderBW.jpg);
     box-shadow: inset 0px 0px 100px 100px rgba(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: contain;
 }
 .rawbot-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
 
 .next-project-ra{
-    background: rgba(66, 66, 66, 0.5) url(../images/rawbot/20180829_Renderproject.jpg) no-repeat;
+    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) no-repeat;
     background-position: 50% 100%;
     background-size: cover;
 }

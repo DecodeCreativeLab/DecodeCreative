@@ -8,7 +8,7 @@
 
 const prjctbtns = document.querySelectorAll('.scroll-item');
 console.log(prjctbtns.length);
-let currentel = "";
+let currentel = "1";
 const scrolltxt = document.querySelector('#scroll-text');
 const scrollbutton = document.querySelector(".scroll-arrow");
 const footer = document.querySelector(".footer");
@@ -83,6 +83,7 @@ function scrollToNextElement() {
     let currentIndex = currentel;
 
     if (currentIndex < prjctbtns.length) {
+        console.log(currentIndex);
         prjctbtns[currentIndex].scrollIntoView();
         if (currentIndex == prjctbtns.length - 1) {
             scrollbutton.style.transform = 'rotate(270deg)';

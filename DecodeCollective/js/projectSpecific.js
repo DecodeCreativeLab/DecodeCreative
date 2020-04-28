@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll(".show-on-scroll");
-console.log(elements.length);
+
 //------------------------- TRIGGER ANIMATIONS WHEN ELEMENT IS IN VIEWPORT -------------------------//
 const numSteps = 20.0;
 // Set things up

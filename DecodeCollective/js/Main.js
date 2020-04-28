@@ -13,8 +13,6 @@ const scrollbutton = document.querySelector(".scroll-arrow");
 const footer = document.querySelector(".footer");
 
 
-
-
 //------------------------- TRIGGER ANIMATIONS WHEN ELEMENT IS IN VIEWPORT -------------------------//
 const numSteps = 20.0;
 // Set things up

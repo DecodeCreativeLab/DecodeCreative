@@ -6,8 +6,9 @@
 //     document.body.classList.add('imgloaded');
 // });
 
-const prjctbtns =document.querySelectorAll('.scroll-item');
-let currentel ="";
+const prjctbtns = document.querySelectorAll('.scroll-item');
+console.log(prjctbtns.length);
+let currentel = "";
 const scrolltxt = document.querySelector('#scroll-text');
 const scrollbutton = document.querySelector(".scroll-arrow");
 const footer = document.querySelector(".footer");
@@ -17,10 +18,10 @@ const footer = document.querySelector(".footer");
 const numSteps = 20.0;
 // Set things up
 window.addEventListener("load", (event) => {
-    boxElement = document.querySelectorAll(".scroll-item");
-    for (let i = 0; i < boxElement.length; i++) {
-        if (boxElement[i] != undefined) {            
-            createObserver(boxElement[i]);
+
+    for (let i = 0; i < prjctbtns.length; i++) {
+        if (prjctbtns[i] != undefined) {
+            createObserver(prjctbtns[i]);
         }
     }
 
@@ -55,19 +56,19 @@ function buildThresholdList() {
 
 function handleIntersect(entries, observer) {
     entries.forEach((entry) => {
-                if (entry.intersectionRatio >= 0.9) {           
-            
-            currentel =  entry.target.getAttribute('index');  
-            if(currentel == prjctbtns.length){
+        if (entry.intersectionRatio >= 0.9) {
+
+            currentel = entry.target.getAttribute('index');
+            if (currentel == prjctbtns.length) {
                 scrollbutton.style.transform = 'rotate(270deg)';
                 scrolltxt.innerText = "Back To Top";
             }
-            else{
+            else {
                 scrollbutton.style.transform = 'rotate(90deg)';
                 scrolltxt.innerText = "Scroll";
-        
+
             }
-                       
+
         }
     });
 }
@@ -78,24 +79,24 @@ function handleIntersect(entries, observer) {
 scrollbutton.addEventListener('click', scrollToNextElement);
 footer.addEventListener('click', scrollToNextElement);
 
-function scrollToNextElement(){
+function scrollToNextElement() {
     let currentIndex = currentel;
-    
-    if(currentIndex<prjctbtns.length){
+
+    if (currentIndex < prjctbtns.length) {
         prjctbtns[currentIndex].scrollIntoView();
-        if(currentIndex==prjctbtns.length-1){
+        if (currentIndex == prjctbtns.length - 1) {
             scrollbutton.style.transform = 'rotate(270deg)';
             scrolltxt.innerText = "Back To Top";
         }
     }
-    else{
+    else {
         prjctbtns[0].scrollIntoView();
         scrollbutton.style.transform = 'rotate(90deg)';
         scrolltxt.innerText = "Scroll";
 
 
     }
-    
+
 }
 
 //--------------------------------------------------------------------------------------------------//

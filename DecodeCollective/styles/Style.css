@@ -76,7 +76,7 @@ h1 {
     position: relative;
     display: block;
     margin: 0 0 0 0;
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 100;
     letter-spacing: .1em;
     z-index: 1;
@@ -141,13 +141,13 @@ input:focus,
 p {
     color: var(--text-colour);
     font-family: var(--font-family-description);
-    font-size: normal;
+    font-size: 1.1vw;
     font-weight: 200;
 }
 
 p>a{
     font-family: var(--font-family-description);
-    font-size: normal;
+    font-size: 1.1vw;
     font-weight: 200;
     text-decoration: none;
 }
@@ -478,6 +478,8 @@ a {
     display: flex;
     text-align: justify;
     padding: 0 10%;
+    max-height: 100%;
+    overflow-y: scroll;
 }
 .grid-body p{
     line-height: 1.7;

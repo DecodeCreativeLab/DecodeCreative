@@ -141,21 +141,20 @@ input:focus,
 p {
     color: var(--text-colour);
     font-family: var(--font-family-description);
-    font-size: 1.1vw;
+    font-size: normal;
     font-weight: 200;
 }
 
 p>a{
     font-family: var(--font-family-description);
-    font-size: 1.1vw;
+    font-size: normal;
     font-weight: 200;
     text-decoration: none;
 }
 
 .inactiveLink {
     pointer-events: none;
-    cursor: default;
-    color: rgb(88, 88, 88);
+    cursor: default;    
  }
 
 /* ----------------- Divider--------- */
@@ -1434,16 +1433,21 @@ div {
 #swapper-project-img {
     /* background-size: cover;
     background-repeat: no-repeat; */
-    background-image: url(../images/perceptiveDatascapes/projectImage.png);
+    background-image: url(../images/Swapper/Screenshot_prjBW.png);
     box-shadow: inset 0px 0px 100px 100px rgb(20, 20, 20, 0.4);
     background-position: 50% 50%;
     background-attachment: fixed;
     background-size: contain;
 }
 .swapper-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) no-repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/Swapper/Screenshot_prj.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
+}
+.next-project-sw{
+    background: rgba(66, 66, 66, 0.5) url(../images/Swapper/Screenshot3.png) no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
 }
 
 #urbanGrowth-project-img {

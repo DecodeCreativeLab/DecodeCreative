@@ -1376,7 +1376,7 @@ div {
 }
 
 .perceptive-overlay{
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/project1.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/project1.jpg) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1397,7 +1397,7 @@ div {
     background-size: contain;
 }
 .geospatial-overlay{
-    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/geospatialInfographics/visualField.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1418,7 +1418,7 @@ div {
     background-size: contain;
 }
 .rawbot-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/Rawbot/20180829_Renderproject.jpg) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1440,7 +1440,7 @@ div {
     background-size: contain;
 }
 .swapper-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/perceptiveDatascapes/projectImage.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }
@@ -1455,7 +1455,7 @@ div {
     background-size: contain;
 }
 .urbanGrowth-overlay {
-    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) repeat fixed;
+    background: rgba(66, 66, 66, 0.5) url(../images/urbanGrowth/urbanGrowthPJimg.png) no-repeat fixed;
     background-position: 50% 50%;
     background-size: contain;
 }

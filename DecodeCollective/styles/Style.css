@@ -145,6 +145,14 @@ p {
     font-weight: 200;
 }
 
+p>a{
+    font-family: var(--font-family-description);
+    font-size: normal;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+
 /* ----------------- Divider--------- */
 hr{
     width: 100%;
@@ -398,7 +406,7 @@ hr{
 
 .contact-container p,
 a {
-    font-size: .9rem;
+    font-size: small;
     font-family: var(--font-family-title);
     margin: 0.3rem 0;
     /* margin: 0; */
@@ -446,9 +454,10 @@ a {
     grid-template-columns:20% 1fr 15% 20% ;
     grid-template-rows: 20% 1fr 20%;
 }
-.project-description p,  .project-description h1{
+.project-description p, .project-description a, .project-description h1{
     color: rgb(25, 27, 27);
 }
+
 .grid-heading{
     grid-row: 1;
     grid-column: 1/4;

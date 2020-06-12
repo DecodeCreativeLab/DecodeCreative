@@ -195,11 +195,18 @@
 
 /* ---- Rawbot ---- */
 #ra-wallpaper{
-    background-image: url(../images/Rawbot/20180901_Render5.jpg);
+    background-image: url(../images/Rawbot/20180901_Render5-1.jpg);
     background-size: cover;
     background-position: center;   
     background-repeat: no-repeat;
 }
+@media only screen and (max-width: 1000px) {
+    /* Laptop Screen: */
+    #ra-wallpaper{
+        background-image: url(../images/Rawbot/20180901_Render5-2b.jpg);
+    }
+  }
+
 
 #ra-grid{
     background-image: url(../images/Rawbot/DSCF7856.JPG);

@@ -9,15 +9,15 @@
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles/projects.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 </head>
 
-<body class="body-restriction" style="background-color: white;"> 
+<body class="body-restriction" style="background-color: white;">
   <div>
-   
+
     <div class="navParent">
       <div class="navbar">
         <div class="logo">
@@ -520,18 +520,18 @@
           </a>
         </div>
         <nav class="menu" id="siteNav">
-          <ul>          
-            <li><a href="projects.html">Projects.</a></li>
-            <li><a href="about.html" class="inactiveLink">About.</a></li>
-            <li><a href="contact.html">Contact.</a></li>
-          </ul>
+          <a href="projects.html" >Projects.</a>
+          <a href="about.html" class="inactiveLink">About.</a>
+          <a href="contact.html">Contact.</a>
+          <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+          </a>
         </nav>
       </div>
     </div>
   </div>
 
-  <div class="scroll-container" style="width: 100vw; margin-top: 12vh;     display: flex;
-  justify-content: center;  padding: 0 10% 10% 10%; align-items:center;">
+  <div class="scroll-container projects-container">
     <ul class="grid">
       <li>
         <a href="#">
@@ -550,7 +550,7 @@
           <img src="./images/rawbot/render-prj.png" alt="">
           <span class="project-title">Rawbot</span>
         </a>
-      </li>     
+      </li>
       <li>
         <a href="#">
           <img src="./images/geospatialInfographics/dataAnalytics.png" alt="">
@@ -566,7 +566,7 @@
       <li>
         <a href="#">
           <img src="./images/urbanGrowth/Picture2.png" alt="">
-          <span class="project-title">urban Growth</span>
+          <span class="project-title">Urban Growth</span>
         </a>
       </li>
 
@@ -574,7 +574,9 @@
     </ul>
   </div>
 
-<div id="polygon"><div class="polygon-background"></div></div>
+  <div id="polygon">
+    <div class="polygon-background"></div>
+  </div>
 
   <!-- <div class="counter">
     <h6 id="current-project">1</h6>

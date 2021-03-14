@@ -204,6 +204,7 @@ hr {
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    padding: 0 6vw;
 }
 .logo {
     width: 5vw;

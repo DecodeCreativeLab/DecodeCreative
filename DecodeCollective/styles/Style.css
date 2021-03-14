@@ -1,22 +1,26 @@
 :root {
-    --background-colour: rgb(25, 27, 27);
+    --background-colour: rgb(255, 255, 255);
+    /* --background-colour: rgb(25, 27, 27); */
     --highlight-colour: gray;
     --section-background: #f2f2f2;
     --creation-colour: yellow;
     --modification-colour: lightgray;
     --deletion-colour: red;
-    --colour-link: lightgray;
-    --color-link-hover: grey;
+    /* --colour-link: lightgray; */
+    --colour-link: rgb(90, 90, 90);
+    --color-link-hover: rgb(163, 163, 163);
     --button-border: 0.2rem;
     --input-border: 0.1rem;
     --light-border: 0.05rem;
-    --text-colour: rgb(255, 255, 255);
+    --text-colour: rgb(0, 0, 0);
+    /* --text-colour: rgb(255, 255, 255); */
     --font-family-title: 'Montserrat', sans-serif;
     --font-family-subtitle: 'Montserrat', sans-serif;
     --font-family-button: 'Montserrat', sans-serif;
     --font-family-input: 'Montserrat', sans-serif;
     --font-family-description: 'Montserrat', sans-serif;
     --font-size-button: 0.7rem;
+    --offset: 1rem;
 }
 
 
@@ -92,7 +96,7 @@ h2 {
 }
 
 h3 {
-    color: var(--colour-link);
+    /* color: var(--colour-link); */
     font-weight: bold;
     font-family: var(--font-family-title);
     margin: 0;
@@ -219,6 +223,17 @@ hr{
      display: flex;
      justify-content: space-between;
      z-index: 3;
+   }
+   .logo{
+    width: 5vw;
+    height: 5vw;    
+    padding: 0.5rem;
+    border: 1px solid var(--text-colour);
+    margin-left: 1rem;
+    min-height: 5em;
+    min-width: 5em;
+    max-width: 7em;
+    max-height: 7em;
    }
    .logo img{
      width: 80px;
@@ -722,9 +737,10 @@ h1::after {
     margin-left: 10px;
     padding: 8px 15px;
     color: var(--colour-link);
+    /* color: var(--colour-link); */
     text-decoration: none;
     /* text-transform: uppercase; */
-    font-size: 0.8em;
+    font-size: 1em;
     transition: all 0.5s;
     /* border: 1px solid var(--colour-link); */
 }
@@ -1512,3 +1528,258 @@ div {
 #sli-child6{
     background-image: url(../images/landingPage/slideshow/sl6.png);
 }
+
+
+/* ********************************************* */
+
+
+#container {
+    perspective: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  #inner {
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    height: 100%;
+  }
+  
+  /*============================================================
+   * EXTRAS
+   *============================================================*/
+  
+   /* mouse over - perspective on image */
+  .demo-img {
+    /* Photo by David Marcu on Unsplash */    
+    background-image: url(../images/landingPage/about_pic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  }
+  
+  #container:hover .demo-overlay {
+    opacity: 1;
+  }
+  
+  #container:hover {
+    cursor: pointer;
+  }
+  
+  .demo-overlay {
+    width: 25em;
+    padding: 10em 0;
+    opacity: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    transition: opacity 0.4s;
+  }
+  
+  .demo-overlay svg {
+    display: block;
+    margin: 0 auto;
+    fill: white;
+  }
+  
+  /* direction aware :hover */
+  
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 40em) {
+    body {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+  img,
+  a {
+    display: block;
+    height: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .grid {
+    display: grid;
+    grid-gap: 0;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .grid li {
+    position: relative;
+  }
+  .grid li:hover ~ li:last-child:after,
+  .grid li:last-child:hover:after,
+  .grid li:hover ~ li:last-child:before,
+  .grid li:last-child:hover:before {
+    opacity: 1;
+    transition: 1s ease;
+  }
+  .grid li:last-child:after,
+  .grid li:last-child:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+    clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
+    -webkit-clip-path: polygon(var(--offset) var(--offset), var(--offset) calc(100% - var(--offset)), calc(100% - var(--offset)) calc(100% - var(--offset)), calc(100% - var(--offset)) var(--offset));
+    opacity: 0;
+    transition: opacity 1s, transform 1s 1s, background 1s;
+  }
+  .grid li:last-child:after {
+    mix-blend-mode: multiply;
+    background: #aaafc3;
+  }
+  .grid li:last-child:before {
+    backdrop-filter: grayscale(100%) blur(2px);
+    -webkit-backdrop-filter: grayscale(100%) blur(2px);
+  }
+  .grid li:nth-child(1):hover ~ li:last-child:after {
+    background: #1A237E;
+  }
+  .grid li:nth-child(2):hover ~ li:last-child:after {
+    background: #b5a1b7;
+  }
+  .grid li:nth-child(3):hover ~ li:last-child:after {
+    background: #aaafc3;
+  }
+  .grid li:nth-child(4):hover ~ li:last-child:after {
+    background: #daa384;
+  }
+  .grid li:nth-child(5):hover ~ li:last-child:after {
+    background: #A5D6A7;
+  }
+  .grid li:nth-child(6):hover ~ li:last-child:after {
+    background: #6c4331;
+  }
+  .grid li:nth-child(7):hover ~ li:last-child:after {
+    background: #555;
+  }
+  .grid li:last-child:hover:after {
+    background: #a88504;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33.3333333333%);
+  }
+  .grid li:last-child:after,
+  .grid li:last-child:before {
+    left: 100%;
+    transform: translate3d(-100%, -100%, 0);
+  }
+  .grid li:nth-child(1):hover ~ li:last-child:after,
+  .grid li:nth-child(1):hover ~ li:last-child:before {
+    transform: translate3d(-200%, -200%, 0);
+  }
+  .grid li:nth-child(2):hover ~ li:last-child:after,
+  .grid li:nth-child(2):hover ~ li:last-child:before {
+    transform: translate3d(-100%, -200%, 0);
+  }
+  .grid li:nth-child(3):hover ~ li:last-child:after,
+  .grid li:nth-child(3):hover ~ li:last-child:before {
+    transform: translate3d(0%, -200%, 0);
+  }
+  .grid li:nth-child(4):hover ~ li:last-child:after,
+  .grid li:nth-child(4):hover ~ li:last-child:before {
+    transform: translate3d(-200%, -100%, 0);
+  }
+  .grid li:nth-child(5):hover ~ li:last-child:after,
+  .grid li:nth-child(5):hover ~ li:last-child:before {
+    transform: translate3d(-100%, -100%, 0);
+  }
+  .grid li:nth-child(6):hover ~ li:last-child:after,
+  .grid li:nth-child(6):hover ~ li:last-child:before {
+    transform: translate3d(0%, -100%, 0);
+  }
+  .grid li:nth-child(7):hover ~ li:last-child:after,
+  .grid li:nth-child(7):hover ~ li:last-child:before {
+    transform: translate3d(-200%, 0%, 0);
+  }
+  .grid li:last-child:hover:after,
+  .grid li:last-child:hover:before {
+    transform: translate3d(-100%, 0%, 0);
+  }
+  
+  @media (max-width: 60em) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 25%);
+    }
+    .grid li:last-child:after,
+  .grid li:last-child:before {
+      left: 0%;
+      transform: translate3d(-50%, -150%, 0);
+    }
+    .grid li:nth-child(1):hover ~ li:last-child:after,
+  .grid li:nth-child(1):hover ~ li:last-child:before {
+      transform: translate3d(-100%, -300%, 0);
+    }
+    .grid li:nth-child(2):hover ~ li:last-child:after,
+  .grid li:nth-child(2):hover ~ li:last-child:before {
+      transform: translate3d(0%, -300%, 0);
+    }
+    .grid li:nth-child(3):hover ~ li:last-child:after,
+  .grid li:nth-child(3):hover ~ li:last-child:before {
+      transform: translate3d(-100%, -200%, 0);
+    }
+    .grid li:nth-child(4):hover ~ li:last-child:after,
+  .grid li:nth-child(4):hover ~ li:last-child:before {
+      transform: translate3d(0%, -200%, 0);
+    }
+    .grid li:nth-child(5):hover ~ li:last-child:after,
+  .grid li:nth-child(5):hover ~ li:last-child:before {
+      transform: translate3d(-100%, -100%, 0);
+    }
+    .grid li:nth-child(6):hover ~ li:last-child:after,
+  .grid li:nth-child(6):hover ~ li:last-child:before {
+      transform: translate3d(0%, -100%, 0);
+    }
+    .grid li:nth-child(7):hover ~ li:last-child:after,
+  .grid li:nth-child(7):hover ~ li:last-child:before {
+      transform: translate3d(-100%, 0%, 0);
+    }
+    .grid li:last-child:hover:after,
+  .grid li:last-child:hover:before {
+      transform: translate3d(0%, 0%, 0);
+    }
+  
+    :root {
+      --offset: 0;
+    }
+  }
+  .description {
+    font-family: "Unica One", sans-serif;
+    font-size: 1.25rem;
+    position: absolute;
+    display: block;
+    right: 2rem;
+    left: 2rem;
+    text-align: center;
+    top: 50%;
+    width: 60px;
+    margin: auto;
+    color: white;
+    z-index: 100;
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+    transition: 0.3s 0s;
+  }
+  
+  li:hover .description {
+    opacity: 1;
+    transition: 0.6s 0.3s;
+  }

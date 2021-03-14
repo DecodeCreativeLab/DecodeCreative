@@ -67,7 +67,7 @@ map.touchZoomRotate.disableRotation();
 let el = document.createElement('div');
 el.className = 'marker';
 let marker = new mapboxgl.Marker(el)
-    .setLngLat([-0.2166444, 51.5132349])
+    .setLngLat([-0.085999656, 51.504831314 ])
     .addTo(map);
 let markerchecked = false;
 el.addEventListener('click', function () {
@@ -75,7 +75,7 @@ el.addEventListener('click', function () {
     if (markerchecked == false) {
         if (map.center != latlon) {
             map.flyTo({
-                center: [-0.2166444, 51.5132349],
+                center: [-0.085999656, 51.504831314],
                 essential: true, // this animation is considered essential with respect to prefers-reduced-motion
                 zoom: 13,
                 speed: 0.4

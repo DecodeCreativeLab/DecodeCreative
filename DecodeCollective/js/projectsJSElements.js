@@ -6,8 +6,8 @@ const prjctbtns =document.querySelectorAll('.project-button');
 const scrolltxt = document.querySelector('#scroll-text');
 
 
-scrollbutton.addEventListener('click', scrollToNextElement);
-footer.addEventListener('click', scrollToNextElement);
+//scrollbutton.addEventListener('click', scrollToNextElement);
+//footer.addEventListener('click', scrollToNextElement);
 
 
 
@@ -103,3 +103,61 @@ function handleIntersect(entries, observer) {
         }
     });
 }
+
+
+
+//------------------------- GRID MOUSEOVER EFFECT -------------------------//
+const gridItems = [...document.querySelector('.grid').querySelectorAll('img')];
+// const polygon = document.createElement('div')
+const polygon = document.querySelector('#polygon')
+let currentTitle;
+gridItemSetup();
+function gridItemSetup(){
+    for(let item of gridItems){
+        item.addEventListener('mouseenter', ()=>{hoverEffect(item)})       
+    }
+    //gridItems.map(x=>x.addEventListener('mouseenter', hoverEffect(x)));
+    polygon.classList.add('hovered-project')
+
+    polygon.addEventListener('mouseover', hoverEffectTitle)
+    polygon.addEventListener('mouseout', hoverEffectClose)
+}
+
+function hoverEffect(el){
+    polygon.style.width = el.clientWidth.toString() +'px';
+    polygon.style.height = el.clientHeight.toString()+'px';
+    const position = getPos(el)    
+   
+    polygon.style.top=position.y +"px";
+    polygon.style.left=position.x +"px";
+    el.nextElementSibling.style.opacity = 1
+    currentTitle =  el.nextElementSibling;
+    polygon.firstElementChild.style.backgroundColor =getRandomColor()
+    
+}
+
+function hoverEffectTitle(el){
+    currentTitle.style.opacity = 1   
+    
+}
+
+function hoverEffectClose(el){
+    currentTitle.style.opacity = 0
+}
+
+function getPos(el) {
+    // yay readability
+    for (var lx=0, ly=0;
+         el != null;
+         lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
+    return {x: lx,y: ly};
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }

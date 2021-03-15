@@ -6,16 +6,16 @@
 //     document.body.classList.add('imgloaded');
 // });
 
-const prjctbtns = document.querySelectorAll('.scroll-item');
-console.log(prjctbtns.length);
-let currentel = "1";
-const scrolltxt = document.querySelector('#scroll-text');
+//const prjctbtns = document.querySelectorAll('.scroll-item');
+//console.log(prjctbtns.length);
+//let currentel = "1";
+//const scrolltxt = document.querySelector('#scroll-text');
 // const scrollbutton = document.querySelector(".scroll-arrow");
 // const footer = document.querySelector(".footer");
 
 
 //------------------------- TRIGGER ANIMATIONS WHEN ELEMENT IS IN VIEWPORT -------------------------//
-const numSteps = 20.0;
+//const numSteps = 20.0;
 // Set things up
 // window.addEventListener("load", (event) => {
 

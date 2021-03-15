@@ -520,7 +520,7 @@
           </a>
         </div>
         <nav class="menu" id="siteNav">
-          <a href="projects.html" >Projects.</a>
+          <a href="projects.html">Projects.</a>
           <a href="about.html" class="inactiveLink">About.</a>
           <a href="contact.html">Contact.</a>
           <a href="javascript:void(0);" class="icon">
@@ -535,38 +535,39 @@
     <ul class="grid">
       <li>
         <a href="#">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fvazbu6zae-andrew-neel-776x517.jpg" alt="">
-          <span class="project-title">InFraReD</span>
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fvazbu6zae-andrew-neel-776x517.jpg" alt=""
+            loading="lazy">
+          <span class="project-title" id="infrared">InFraReD</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/perceptiveDatascapes/pctop.png" alt="">
-          <span class="project-title">Perceptive Datascapes</span>
+          <img src="./images/perceptiveDatascapes/pctop.png" alt="" loading="lazy">
+          <span class="project-title" id="perceptive-datascapes">Perceptive Datascapes</span>
         </a>
       </li>
       <li>
         <a href="#">
           <img src="./images/rawbot/render-prj.png" alt="">
-          <span class="project-title">Rawbot</span>
+          <span class="project-title" id="rawbot">Rawbot</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/geospatialInfographics/dataAnalytics.png" alt="">
-          <span class="project-title">Geospatial Infographics</span>
+          <img src="./images/geospatialInfographics/dataAnalytics.png" alt="" loading="lazy">
+          <span class="project-title" id="geospatial">Geospatial Infographics</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/swapper/Screenshot 1(36).png" alt="">
-          <span class="project-title">Swapper</span>
+          <img src="./images/swapper/Screenshot 1(36).png" alt="" loading="lazy">
+          <span class="project-title" id="swapper">Swapper</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/urbanGrowth/Picture2.png" alt="">
-          <span class="project-title">Urban Growth</span>
+          <img src="./images/urbanGrowth/Picture2.png" alt="" loading="lazy">
+          <span class="project-title" id="urban-growth">Urban Growth</span>
         </a>
       </li>
 
@@ -578,6 +579,81 @@
     <div class="polygon-background"></div>
   </div>
 
+  <div class="popup hidden">
+    <button class="x-btn"></button>
+    <h2 class='popup-title'></h2>
+    <div class="popup-container">
+     
+      <p class='popup-description hidden' id="infrared-desc"></p>
+      <p class='popup-description hidden' id="perceptive-datascapes-desc">This project explores the potentials of data driven design in building and landscape level as a seemless structure. The aim is to explore the
+        possibility of
+        developping a work-flow which changes a given structure based on an input set of data. In this case we experiment on
+        the application of certain patterns which are shaped and reformed based on data evaluation and
+        optimisation processes...</p>
+      <p class='popup-description hidden' id="rawbot-desc">
+        This collaborative research project is aiming to utilise immersive technologies in the design and
+        fabrication
+        process, for the benefit of people living in rural areas of the devoloping world.
+        Technology infrastucture in these areas is sparse, so Rawbot consolidates and automates
+        the design and assembly instructions for fast and affordable bamboo housing in a single smartphone
+        app. Living
+        spaces are allocated by the user and the bamboo poles get automatically placed to shape
+        the structure. As the poles are being harvested on site and are not undergoing any standardisation
+        treatment,
+        they will be used with all their irregularities. For that reason, Machine Learning is
+        called to "scan" the material real-time, without using extra equipment such as a 3D scanner.
+        A neural network has been trainned to detect the start, end and nodes of bamboo sticks.
+        This way Rawbot is using the data to construct a discrete yet raw material
+        and pass it on as abstract geometry to the assembly stage. The user interacts with Rawbot
+        through an Augmented Reality (AR) client that projects in 3D space the final
+        postion of the piece. Special silicone/steel core joints, were developed to keep the
+        pieces at, predictable, right angles, while their adjustable size can respond
+        to range of bamboo thicknesses. <br>
+        <a href="https://vimeo.com/304106442">See the full video here.</a>
+      </p>
+      <p class='popup-description hidden' id="geospatial-desc">This research reflects upon principles of physical
+        connectivity and visual perception as the means to
+        evaluate
+        and generate new spatial configurations for contemporary urban systems. The aim of the project is to
+        explore the
+        possibility of
+        constructing a computational analytic model, which could function as an
+        additional
+        layer in the design process by mining, analysing and visualising geo-spatial data in a virtual 3D
+        space. By evaluating parts of the city against the main components that affect visual perception
+        (visibility, light, colour and movement), we identify areas of low permeability.
+        This system helps in the creation of new topographies which encourage the interplay between human
+        and
+        inhuman intelligence in an environment of hybrid cyberspace. Hypervirtuality,
+        the analysis and evaluation of a set of multidimensional continuous data in Virtual Reality could
+        challenge the way people perceive the urban fabric. This immersive space that mixes real and virtual
+        offers the necessary ground for this analytic workflow to expand beyond computation into a gradient
+        of
+        experiences.</p>
+      <p class='popup-description hidden' id="swapper-desc"></p>
+      <p class='popup-description hidden' id="urban-growth-desc">
+        This project is considered as an exercise trying to explore
+        new ways of predicting future evolution of the urban tissue.
+        By gathering data indicating any sort of activity, the estmated
+        areas of urban development are established. The studied data
+        layers derive from various sources and illustrate potential of
+        movement, presence of many people and latest constructions.
+        These areas constitute the seeds of future urban regeneration.
+        Therefore, cellular automata are used as a generative algorithm
+        that by changing the rules of growth according to spatial
+        characteristics, a potential estimation of how the city might
+        look like in the future is investigated. These structures are a
+        diagramatic representation of density of activity. In other words,
+        they could represent the bounding box for building volumes. As,
+        soon as the generation is completed the resulted configuration
+        is excavated in areas where public amenities are met. However,
+        the overall volume is retained as the excavated parts are
+        regenerated in other available positions. The final result depicts
+        an estimation of one of many version of urban development.
+      </p>
+    </div>
+   
+  </div>
   <!-- <div class="counter">
     <h6 id="current-project">1</h6>
     <hr id="divider" class="divider">

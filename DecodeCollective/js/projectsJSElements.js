@@ -1,17 +1,21 @@
-const currentel = document.querySelector("#current-project");
-const divider = document.querySelector("#divider");
-const scrollbutton = document.querySelector(".scroll-arrow");
-const footer = document.querySelector(".footer");
-const prjctbtns = document.querySelectorAll('.project-button');
-const scrolltxt = document.querySelector('#scroll-text');
-
-
-const navBarIcon = document.querySelector('.icon');
-navBarIcon.addEventListener('click', handleNavBar)
-
+// const currentel = document.querySelector("#current-project");
+// const divider = document.querySelector("#divider");
+// const scrollbutton = document.querySelector(".scroll-arrow");
+// const footer = document.querySelector(".footer");
+// const prjctbtns = document.querySelectorAll('.project-button');
+// const scrolltxt = document.querySelector('#scroll-text');
 
 //scrollbutton.addEventListener('click', scrollToNextElement);
 //footer.addEventListener('click', scrollToNextElement);
+
+const navBarIcon = document.querySelector('.icon');
+navBarIcon.addEventListener('click', handleNavBar);
+
+const popup = document.querySelector('.popup');
+const popupX=document.querySelector(".x-btn");
+popupX.addEventListener('click', ()=>{popup.classList.add('hidden')});
+
+
 
 function handleNavBar() {
     var x = document.querySelector(".menu");
@@ -42,6 +46,8 @@ function scrollToNextElement() {
 
 }
 
+
+
 //------------------------- WAIT TO LOAD THE WHOLE PAGE -------------------------//
 // let loader = document.getElementById('loader');
 // window.addEventListener("load", function (event) {
@@ -51,69 +57,69 @@ function scrollToNextElement() {
 // });
 
 //------------------------- TRIGGER ANIMATIONS WHEN ELEMENT IS IN VIEWPORT -------------------------//
-const numSteps = 20.0;
-// Set things up
-window.addEventListener("load", (event) => {
-    boxElement = document.querySelectorAll(".show-on-scroll");
-    for (let i = 0; i < boxElement.length; i++) {
-        if (boxElement[i] != undefined) {
-            createObserver(boxElement[i]);
-        }
-    }
+// const numSteps = 20.0;
+// // Set things up
+// window.addEventListener("load", (event) => {
+//     boxElement = document.querySelectorAll(".show-on-scroll");
+//     for (let i = 0; i < boxElement.length; i++) {
+//         if (boxElement[i] != undefined) {
+//             createObserver(boxElement[i]);
+//         }
+//     }
 
-}, false);
+// }, false);
 
 
-function createObserver(element) {
-    let observer;
+// function createObserver(element) {
+//     let observer;
 
-    let options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: buildThresholdList()
-    };
+//     let options = {
+//         root: null,
+//         rootMargin: "0px",
+//         threshold: buildThresholdList()
+//     };
 
-    observer = new IntersectionObserver(handleIntersect, options);
-    observer.observe(element);
-}
+//     observer = new IntersectionObserver(handleIntersect, options);
+//     observer.observe(element);
+// }
 
-function buildThresholdList() {
-    let thresholds = [];
-    let numSteps = 20;
+// function buildThresholdList() {
+//     let thresholds = [];
+//     let numSteps = 20;
 
-    for (let i = 1.0; i <= numSteps; i++) {
-        let ratio = i / numSteps;
-        thresholds.push(ratio);
-    }
+//     for (let i = 1.0; i <= numSteps; i++) {
+//         let ratio = i / numSteps;
+//         thresholds.push(ratio);
+//     }
 
-    thresholds.push(0);
-    return thresholds;
-}
+//     thresholds.push(0);
+//     return thresholds;
+// }
 
-function handleIntersect(entries, observer) {
-    entries.forEach((entry) => {
-        if (entry.intersectionRatio >= 1) {
-            currentel.innerText = entry.target.getAttribute('index');
-            if (currentel.innerText == prjctbtns.length) {
-                scrollbutton.style.transform = 'rotate(270deg)';
-                scrolltxt.innerText = "Back To Top";
-            }
-            else {
-                scrollbutton.style.transform = 'rotate(90deg)';
-                scrolltxt.innerText = "Scroll";
+// function handleIntersect(entries, observer) {
+//     entries.forEach((entry) => {
+//         if (entry.intersectionRatio >= 1) {
+//             currentel.innerText = entry.target.getAttribute('index');
+//             if (currentel.innerText == prjctbtns.length) {
+//                 scrollbutton.style.transform = 'rotate(270deg)';
+//                 scrolltxt.innerText = "Back To Top";
+//             }
+//             else {
+//                 scrollbutton.style.transform = 'rotate(90deg)';
+//                 scrolltxt.innerText = "Scroll";
 
-            }
-            // entry.target.classList.remove("slide-top");   
+//             }
+//             // entry.target.classList.remove("slide-top");   
 
-            divider.classList.remove("divider");
-            setTimeout(function () {
-                // entry.target.classList.add("slide-top");   
+//             divider.classList.remove("divider");
+//             setTimeout(function () {
+//                 // entry.target.classList.add("slide-top");   
 
-                divider.classList.add("divider");
-            }, 200);
-        }
-    });
-}
+//                 divider.classList.add("divider");
+//             }, 200);
+//         }
+//     });
+// }
 
 
 
@@ -131,6 +137,7 @@ function gridItemSetup() {
     polygon.classList.add('hovered-project')
     polygon.addEventListener('mouseover', hoverEffectTitle)
     polygon.addEventListener('mouseout', hoverEffectClose)
+    polygon.addEventListener('click', openPopup)
 }
 
 function hoverEffect(el) {
@@ -153,8 +160,7 @@ function hoverEffectClose() {
     currentElement.nextElementSibling.style.opacity = 0
 }
 
-function getPos(el) {
-    // yay readability
+function getPos(el) {    
     for (var lx = 0, ly = 0;
         el != null;
         lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
@@ -172,4 +178,13 @@ function getRandomColor() {
 
 window.onresize = () => {
     hoverEffect(currentElement)
+}
+
+function openPopup(){
+    popup.classList.remove('hidden')
+    const descs = [...document.querySelectorAll('.popup-description')];
+    descs.map(x=>x.classList.add("hidden"))
+
+    popup.querySelector('.popup-title').innerText = currentElement.nextElementSibling.innerText;
+    popup.querySelector(`#${currentElement.nextElementSibling.id}-desc`).classList.remove('hidden')
 }

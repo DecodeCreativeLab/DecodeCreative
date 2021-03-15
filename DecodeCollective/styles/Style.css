@@ -198,13 +198,15 @@ hr {
 /*  SECTION 1 +navigation */
 
 .navbar {
-    position: fixed;
-    top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 3;
-    padding: 0 6vw;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left:0
+   
 }
 .logo {
     width: 5vw;
@@ -226,18 +228,83 @@ hr {
 }
 .menu {
     display: flex;
-    align-items: center;
-}
-.menu ul {
-    display: flex;
+    /* align-items: center; */
+    overflow: hidden;
+    /* flex-grow: 1; */
     justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    margin-right: 40px;
 }
+
 .menu a {
     margin: 0 20px;
     padding: 0 10px;
+    float: left;
+    display: block;
+    color: var(--colour-link);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: var(--color-link-hover);
+}
+
+.menu a.active {
+    text-decoration: underline;
+}
+
+.menu .icon {
+    display: none;
+    margin:0;
+}
+
+@media screen and (max-width: 600px) {
+  
+    .menu a {
+        display: none;
+    }
+    .menu a.icon {
+        float: right;
+        display: flex;
+        /* background-color: var(--highlight-colour); */
+        width: 2rem;
+        height: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-container{
+        margin-top:11vh
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu.responsive {
+        position: relative;
+        flex-direction: column;        
+        padding: 0 3rem 0 0;
+        background-color: whitesmoke;
+    }
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 2rem;
+        height: 2rem;
+    }
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        height: auto;        
+        margin:0;
+    }
+    .menu.responsive a:not(:last-child){
+        margin-top: 0.5rem;
+    }
+    .menu.responsive a:first-child{
+        margin-top: 2rem;
+    }
 }
 .nav-text {
     color: white !important;

@@ -175,8 +175,7 @@ a {
     background-color: white;
 }
 .projects-container {
-    width: 100vw;
-    margin-top: 15vh;
+    width: 100vw;    
     display: flex;
     justify-content: center;
     padding: 0 10% 10% 10%;
@@ -216,14 +215,13 @@ a {
     border-bottom: thin;
 }
 
-.navbar {
-    position: fixed;
-    top: 20px;
+.navbar {    
     width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 3;
-    padding: 0 6vw;
+    padding: 1rem;
+    background-color: white;
 }
 .logo {
     width: 5vw;
@@ -259,7 +257,7 @@ a {
     color: var(--colour-link);
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .menu a:hover {
@@ -273,6 +271,7 @@ a {
 .menu .icon {
     display: none;
     margin:0;
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -288,11 +287,10 @@ a {
         height: 2rem;
         justify-content: center;
         align-items: center;
+        
     }
 
-    .projects-container{
-        margin-top:11vh
-    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -300,7 +298,7 @@ a {
         position: relative;
         flex-direction: column;        
         padding: 0 3rem 0 0;
-        background-color: whitesmoke;
+        margin-bottom: 1rem;
     }
     .menu.responsive .icon {
         position: absolute;
@@ -308,6 +306,7 @@ a {
         top: 0;
         width: 2rem;
         height: 2rem;
+        margin-top: 1rem;
     }
     .menu.responsive a {
         float: none;
@@ -322,6 +321,13 @@ a {
     .menu.responsive a:first-child{
         margin-top: 2rem;
     }
+
+    .popup{
+        width: 100vw  !important;
+        top: 20vh !important;
+        left:0 !important;
+    }
+
 }
 
 /*-------------------- SCROLLBAR --------------------*/
@@ -456,4 +462,55 @@ li .project-title {
 
 li:hover .project-title {
     transition: 0.6s 0.3s;
+}
+
+
+/* ------------------ POPUP --------------- */
+.popup{
+    position: fixed;
+    top:20vh;
+    left:37.5vw;
+    width:25vw;
+    height: 60vh;
+    min-width: 300px;
+    min-height: 600px;
+    background-color: var(--background-colour);
+    z-index: 200;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 5px 6px 3px #77777760;
+}
+.popup-container{
+    overflow-y: auto;
+}
+.x-btn{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    background-image: url(../images/icons/close-24px.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    background-size: cover;
+    background-color: white;
+}
+.x-btn:active{
+    outline: none;
+}
+.x-btn:hover{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.popup-description{
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+.popup-title{
+    font-weight: 800;
 }

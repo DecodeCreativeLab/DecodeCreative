@@ -12,8 +12,11 @@ const navBarIcon = document.querySelector('.icon');
 navBarIcon.addEventListener('click', handleNavBar);
 
 const popup = document.querySelector('.popup');
-const popupX=document.querySelector(".x-btn");
-popupX.addEventListener('click', ()=>{popup.classList.add('hidden')});
+const popupX = document.querySelector(".x-btn");
+popupX.addEventListener('click', () => { 
+    popup.classList.add('hidden') 
+    popup.classList.remove('popup-open') 
+});
 
 
 
@@ -40,8 +43,6 @@ function scrollToNextElement() {
         prjctbtns[0].scrollIntoView();
         scrollbutton.style.transform = 'rotate(90deg)';
         scrolltxt.innerText = "Scroll";
-
-
     }
 
 }
@@ -124,14 +125,19 @@ function scrollToNextElement() {
 
 
 //------------------------- GRID MOUSEOVER EFFECT -------------------------//
-const gridItems = [...document.querySelector('.grid').querySelectorAll('img')];
+const gridItems = [...document.querySelector('.grid').querySelectorAll('picture')];
 const polygon = document.querySelector('#polygon')
 let currentElement;
-
+let screenSize = true;
 gridItemSetup();
+detectScroll(document.querySelector(".scroll-container"));
+detectHover();
+
 function gridItemSetup() {
     for (let item of gridItems) {
         item.addEventListener('mouseenter', () => { hoverEffect(item) })
+        item.addEventListener('click', openPopup)
+        item.nextElementSibling.addEventListener('click', openPopup)
     }
 
     polygon.classList.add('hovered-project')
@@ -141,26 +147,30 @@ function gridItemSetup() {
 }
 
 function hoverEffect(el) {
+    if (!el) return
+    currentElement = el;
     gridItems.map(x => x.nextElementSibling.style.opacity = 0);
-    polygon.style.width = el.clientWidth.toString() + 'px';
-    polygon.style.height = el.clientHeight.toString() + 'px';
+    polygon.style.width = el.lastElementChild.clientWidth.toString() + 'px';
+    polygon.style.height = el.lastElementChild.clientHeight.toString() + 'px';
     const position = getPos(el)
     polygon.style.top = position.y + "px";
     polygon.style.left = position.x + "px";
     el.nextElementSibling.style.opacity = 1
-    currentElement = el;
     polygon.firstElementChild.style.backgroundColor = getRandomColor()
+    polygon.style.opacity = (screenSize) ? 1 : 0
 }
 
 function hoverEffectTitle() {
+    if (!currentElement || !screenSize) return
     currentElement.nextElementSibling.style.opacity = 1
 }
 
 function hoverEffectClose() {
-    currentElement.nextElementSibling.style.opacity = 0
+    if (!currentElement || !screenSize) return
+    currentElement.nextElementSibling.style.opacity = 0    
 }
 
-function getPos(el) {    
+function getPos(el) {
     for (var lx = 0, ly = 0;
         el != null;
         lx += el.offsetLeft, ly += el.offsetTop, el = el.offsetParent);
@@ -178,13 +188,31 @@ function getRandomColor() {
 
 window.onresize = () => {
     hoverEffect(currentElement)
+    detectScroll(document.querySelector(".scroll-container"))
+    detectHover()
 }
 
-function openPopup(){
+function openPopup() {
     popup.classList.remove('hidden')
+    popup.classList.add('popup-open')
+    popup.focus()
     const descs = [...document.querySelectorAll('.popup-description')];
-    descs.map(x=>x.classList.add("hidden"))
+    descs.map(x => x.classList.add("hidden"))
 
     popup.querySelector('.popup-title').innerText = currentElement.nextElementSibling.innerText;
     popup.querySelector(`#${currentElement.nextElementSibling.id}-desc`).classList.remove('hidden')
+    popup.querySelector(".popup-content").style.backgroundColor = polygon.firstElementChild.style.backgroundColor;
+}
+
+function detectScroll(div) {
+    if (div.scrollHeight > div.clientHeight) div.style.alignItems = "flex-start";
+    else div.style.alignItems = "center"
+}
+
+function detectHover() {
+    if (window.matchMedia("only screen and (max-width: 760px)").matches) {
+        gridItems.map(x => x.nextElementSibling.style.opacity = 1);
+        screenSize = false
+    }
+    else screenSize = true
 }

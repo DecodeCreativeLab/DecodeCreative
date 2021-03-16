@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body class="body-restriction" style="background-color: white;">
@@ -535,38 +536,65 @@
     <ul class="grid">
       <li>
         <a href="#">
-          <img src="./images/optimized/infrared_medium.webp" alt=""
-            loading="lazy">
+          <picture>
+            <source srcset="./images/optimized/infrared_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/infrared_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/infrared_medium.jpg" alt="infrared" loading="lazy">
+          </picture>          
           <span class="project-title" id="infrared">InFraReD</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/optimized/perspective_datascapes_medium.webp" alt="" loading="lazy">
+          <picture>
+            <source srcset="./images/optimized/perspective_datascapes_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/perspective_datascapes_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/infrared_medium.jpg" alt="perceptive datascapes" loading="lazy">
+          </picture>            
           <span class="project-title" id="perceptive-datascapes">Perceptive Datascapes</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/optimized/Rawbot_medium.webp" alt="">
+          <picture>
+            <source srcset="./images/optimized/Rawbot_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/Rawbot_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/Rawbot_medium.jpg" alt="rawbot" loading="lazy">
+          </picture>   
+          
           <span class="project-title" id="rawbot">Rawbot</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/optimized/ligthing_medium.webp" alt="" loading="lazy">
+          <picture>
+            <source srcset="./images/optimized/ligthing_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/ligthing_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/ligthing_medium.jpg" alt="geospatial infographics" loading="lazy">
+          </picture>
+         
           <span class="project-title" id="geospatial">Geospatial Infographics</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/optimized/Swapper(36)_medium.webp" alt="" loading="lazy">
+          <picture>
+            <source srcset="./images/optimized/Swapper(36)_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/Swapper(36)_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/Swapper(36)_medium.jpg" alt="swapper" loading="lazy">
+          </picture>
+         
           <span class="project-title" id="swapper">Swapper</span>
         </a>
       </li>
       <li>
         <a href="#">
-          <img src="./images/optimized/frames_medium.webp" alt="" loading="lazy">
+          <picture>
+            <source srcset="./images/optimized/frames_medium.webp" type="image/webp">
+            <source srcset="./images/optimized/frames_medium.jpg" type="image/jpeg"> 
+            <img src="./images/optimized/frames_medium.jpg" alt="urban growth" loading="lazy">
+          </picture>
+          
           <span class="project-title" id="urban-growth">Urban Growth</span>
         </a>
       </li>
@@ -581,9 +609,11 @@
 
   <!--  -->
 
-  <div class="popup hidden">
-    <button class="x-btn"></button>
-    <h2 class='popup-title'></h2>
+  <div class="popup hidden" tabindex="0">
+    <div class="popup-content">
+      <button class="x-btn"></button>
+      <h2 class='popup-title'></h2>
+    </div>    
     <div class="popup-container">
      
       <p class='popup-description hidden' id="infrared-desc"></p>

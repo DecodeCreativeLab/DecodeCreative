@@ -1,6 +1,3 @@
-# Decode Creative website
-WIP
+# Decode Creative Lab website
 
 Website for decode creative lab.
-
-<a href="https://annakampvr.github.io/DecodeCreative/DecodeCollective/Index.html  "> GitPage </a>

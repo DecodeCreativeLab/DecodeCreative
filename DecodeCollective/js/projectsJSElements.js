@@ -194,14 +194,14 @@ window.onresize = () => {
 
 function openPopup() {
     popup.classList.remove('hidden')
-    popup.classList.add('popup-open')
-    popup.focus()
-    const descs = [...document.querySelectorAll('.popup-description')];
+    // popup.classList.add('popup-open')
+    // popup.focus()
+    const descs = [...document.querySelectorAll('.project-popup')];
     descs.map(x => x.classList.add("hidden"))
 
-    popup.querySelector('.popup-title').innerText = currentElement.nextElementSibling.innerText;
+    // popup.querySelector('.popup-title').innerText = currentElement.nextElementSibling.innerText;
     popup.querySelector(`#${currentElement.nextElementSibling.id}-desc`).classList.remove('hidden')
-    popup.querySelector(".popup-content").style.backgroundColor = polygon.firstElementChild.style.backgroundColor;
+    popup.querySelector(".popup-background").style.backgroundColor = polygon.firstElementChild.style.backgroundColor;
 }
 
 function detectScroll(div) {

@@ -26,7 +26,7 @@
 /*-------------------- TAG STYLES --------------------*/
 
 body {
-    font-family: var(--font-family-description);
+    font-family: var(--font-family-description);    
     background-color: var(--background-colour);
     margin: 0;
     height: 100vh;
@@ -136,13 +136,13 @@ p {
     color: var(--text-colour);
     font-family: var(--font-family-description);
     font-size: normal;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 p > a {
     font-family: var(--font-family-description);
     font-size: normal;
-    font-weight: 200;
+    font-weight: 300;
     text-decoration: none;
 }
 
@@ -194,7 +194,6 @@ hr {
     background-color: white;
 }
 
-
 /*  SECTION 1 +navigation */
 
 .navbar {
@@ -205,8 +204,7 @@ hr {
     padding: 1rem;
     position: absolute;
     top: 0;
-    left:0
-   
+    left: 0;
 }
 .logo {
     width: 5vw;
@@ -243,6 +241,7 @@ hr {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .menu a:hover {
@@ -255,11 +254,10 @@ hr {
 
 .menu .icon {
     display: none;
-    margin:0;
+    margin: 0;
 }
 
 @media screen and (max-width: 600px) {
-  
     .menu a {
         display: none;
     }
@@ -273,15 +271,15 @@ hr {
         align-items: center;
     }
 
-    .projects-container{
-        margin-top:11vh
+    .projects-container {
+        margin-top: 11vh;
     }
 }
 
 @media screen and (max-width: 600px) {
     .menu.responsive {
         position: relative;
-        flex-direction: column;        
+        flex-direction: column;
         padding: 0 3rem 0 0;
         background-color: whitesmoke;
     }
@@ -296,20 +294,20 @@ hr {
         float: none;
         display: block;
         text-align: left;
-        height: auto;        
-        margin:0;
+        height: auto;
+        margin: 0;
     }
-    .menu.responsive a:not(:last-child){
+    .menu.responsive a:not(:last-child) {
         margin-top: 0.5rem;
     }
-    .menu.responsive a:first-child{
+    .menu.responsive a:first-child {
         margin-top: 2rem;
     }
 }
 .nav-text {
     color: white !important;
 }
-/*----nd of section 1--------*/
+/*----End of section 1--------*/
 .generic-wrapper {
     height: 100%;
     margin: 0;
@@ -367,8 +365,6 @@ hr {
     /* min-height: 100vh; */
     min-width: 100vw;
 }
-
-
 
 .contact-container {
     padding: 2em 20%;
@@ -563,8 +559,6 @@ a {
     justify-content: space-between;
 }
 
-
-
 /*-------------------- TEXT --------------------*/
 
 .description {
@@ -724,8 +718,6 @@ h1::after {
     border-bottom: thin;
 }
 
-
-
 /*-------------------- SCROLL HOVER EFFECT --------------------*/
 
 .footer {
@@ -839,12 +831,12 @@ h1::after {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
+    background: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
 }
 
 div {
-    scrollbar-color: black white;
+    scrollbar-color: rgb(196, 196, 196) white;
     scrollbar-width: thin;
     scrollbar-width: 6px;
 }
@@ -855,7 +847,7 @@ div {
 }
 
 ::-ms-scrollbar-thumb {
-    background: rgb(0, 0, 0);
+    background: rgb(196, 196, 196);
     /* border: 1px solid white; */
 }
 
@@ -972,30 +964,6 @@ div {
     }
 }
 
-/*---------------------------- MAP ----------------------------*/
-#map {
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-.marker {
-    background-image: url("../images/markerC.svg");
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    /* border-radius: 50%; */
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
 /* ********************************************* */
 #about-photo {
     background-image: url(../images/landingPage/about_pic.png);
@@ -1021,8 +989,8 @@ div {
 }
 
 /*============================================================
-   * EXTRAS
-   *============================================================*/
+* EXTRAS
+*============================================================*/
 
 /* mouse over - perspective on image */
 .demo-img {

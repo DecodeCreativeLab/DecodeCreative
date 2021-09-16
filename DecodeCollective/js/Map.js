@@ -2,7 +2,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYWthbXAiLCJhIjoiY2pxcGQ2dDJuMDBjbzQ0bnV0eDU0Y2dxciJ9.cXjuy1PnrpFANm1UItLJww';
 var map = new mapboxgl.Map({
     container: 'map', // Container ID
-    style: 'mapbox://styles/annakamp/ck7gkqyfj1srz1imrg3f1j9h5', // Map style to use
+    style: 'mapbox://styles/annakamp/ckmtkrl6i2gop17qp42kui01v', // 'mapbox://styles/annakamp/ckmtjf90942jp17pkfikm8mox', // Map style to use
     center: [7.3072819, 45.9083282], // Starting position [lng, lat]
     zoom: 3.5, // Starting zoom level
     preserveDrawingBuffer: true,
@@ -96,7 +96,7 @@ el.addEventListener('click', function () {
 let elA = document.createElement('div');
 elA.className = 'marker';
 let marker1 = new mapboxgl.Marker(elA)
-    .setLngLat([23.7613095, 37.9851516])
+    .setLngLat([23.7634194, 37.9852545])
     .addTo(map);
 let checked = false;
 elA.addEventListener('click', function () {
@@ -104,7 +104,7 @@ elA.addEventListener('click', function () {
     if (checked == false) {
         if (map.center != latlon) {
             map.flyTo({
-                center: [23.7613095, 37.9851516],
+                center: [23.7634194, 37.9852545],
                 essential: true, // this animation is considered essential with respect to prefers-reduced-motion
                 zoom: 13,
                 speed: 0.4

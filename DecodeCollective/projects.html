@@ -13,7 +13,12 @@
   <!-- Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="body-restriction" style="background-color: white;">
@@ -522,7 +527,7 @@
         </div>
         <nav class="menu" id="siteNav">
           <a href="projects.html">Projects.</a>
-          <a href="about.html" class="inactiveLink">About.</a>
+          <a href="about.html">About.</a>
           <a href="contact.html">Contact.</a>
           <a href="javascript:void(0);" class="icon">
             <i class="fa fa-bars"></i>
@@ -538,9 +543,9 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/infrared_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/infrared_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/infrared_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/infrared_medium.jpg" alt="infrared" loading="lazy">
-          </picture>          
+          </picture>
           <span class="project-title" id="infrared">InFraReD</span>
         </a>
       </li>
@@ -548,9 +553,9 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/perspective_datascapes_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/perspective_datascapes_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/perspective_datascapes_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/infrared_medium.jpg" alt="perceptive datascapes" loading="lazy">
-          </picture>            
+          </picture>
           <span class="project-title" id="perceptive-datascapes">Perceptive Datascapes</span>
         </a>
       </li>
@@ -558,10 +563,10 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/Rawbot_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/Rawbot_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/Rawbot_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/Rawbot_medium.jpg" alt="rawbot" loading="lazy">
-          </picture>   
-          
+          </picture>
+
           <span class="project-title" id="rawbot">Rawbot</span>
         </a>
       </li>
@@ -569,10 +574,10 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/ligthing_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/ligthing_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/ligthing_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/ligthing_medium.jpg" alt="geospatial infographics" loading="lazy">
           </picture>
-         
+
           <span class="project-title" id="geospatial">Geospatial Infographics</span>
         </a>
       </li>
@@ -580,10 +585,10 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/Swapper(36)_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/Swapper(36)_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/Swapper(36)_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/Swapper(36)_medium.jpg" alt="swapper" loading="lazy">
           </picture>
-         
+
           <span class="project-title" id="swapper">Swapper</span>
         </a>
       </li>
@@ -591,10 +596,10 @@
         <a href="#">
           <picture>
             <source srcset="./images/optimized/frames_medium.webp" type="image/webp">
-            <source srcset="./images/optimized/frames_medium.jpg" type="image/jpeg"> 
+            <source srcset="./images/optimized/frames_medium.jpg" type="image/jpeg">
             <img src="./images/optimized/frames_medium.jpg" alt="urban growth" loading="lazy">
           </picture>
-          
+
           <span class="project-title" id="urban-growth">Urban Growth</span>
         </a>
       </li>
@@ -610,60 +615,144 @@
   <!--  -->
 
   <div class="popup hidden" tabindex="0">
-    <div class="popup-content">
-      <button class="x-btn"></button>
-      <h2 class='popup-title'></h2>
-    </div>    
-    <div class="popup-container">
-     
-      <p class='popup-description hidden' id="infrared-desc"></p>
-      <p class='popup-description hidden' id="perceptive-datascapes-desc">This project explores the potentials of data driven design in building and landscape level as a seemless structure. The aim is to explore the
+    <div class="popup-background"></div>
+    <button class="x-btn"></button>
+
+    <div class="project-popup hidden" id="infrared-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>InFraReD</h2>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class='popup-description'></p>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2020</p>
+      </div>
+    </div>
+
+    <div class="project-popup hidden" id="perceptive-datascapes-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>Perceptive Datascapes</h2>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class='popup-description'>This project explores the potentials of data driven design on building and
+        landscape level as a seemless structure. The aim is to explore the
         possibility of
-        developping a work-flow which changes a given structure based on an input set of data. In this case we experiment on
+        developping a work-flow which changes a given structure based on an input set of data. In this case we
+        experiment on
         the application of certain patterns which are shaped and reformed based on data evaluation and
-        optimisation processes...</p>
-      <p class='popup-description hidden' id="rawbot-desc">
-        This collaborative research project is aiming to utilise immersive technologies in the design and
-        fabrication
-        process, for the benefit of people living in rural areas of the devoloping world.
-        Technology infrastucture in these areas is sparse, so Rawbot consolidates and automates
-        the design and assembly instructions for fast and affordable bamboo housing in a single smartphone
-        app. Living
-        spaces are allocated by the user and the bamboo poles get automatically placed to shape
-        the structure. As the poles are being harvested on site and are not undergoing any standardisation
-        treatment,
-        they will be used with all their irregularities. For that reason, Machine Learning is
-        called to "scan" the material real-time, without using extra equipment such as a 3D scanner.
-        A neural network has been trainned to detect the start, end and nodes of bamboo sticks.
-        This way Rawbot is using the data to construct a discrete yet raw material
-        and pass it on as abstract geometry to the assembly stage. The user interacts with Rawbot
-        through an Augmented Reality (AR) client that projects in 3D space the final
-        postion of the piece. Special silicone/steel core joints, were developed to keep the
-        pieces at, predictable, right angles, while their adjustable size can respond
-        to range of bamboo thicknesses. <br>
-        <a href="https://vimeo.com/304106442">See the full video here.</a>
-      </p>
-      <p class='popup-description hidden' id="geospatial-desc">This research reflects upon principles of physical
-        connectivity and visual perception as the means to
-        evaluate
-        and generate new spatial configurations for contemporary urban systems. The aim of the project is to
-        explore the
-        possibility of
-        constructing a computational analytic model, which could function as an
-        additional
-        layer in the design process by mining, analysing and visualising geo-spatial data in a virtual 3D
-        space. By evaluating parts of the city against the main components that affect visual perception
-        (visibility, light, colour and movement), we identify areas of low permeability.
-        This system helps in the creation of new topographies which encourage the interplay between human
-        and
-        inhuman intelligence in an environment of hybrid cyberspace. Hypervirtuality,
-        the analysis and evaluation of a set of multidimensional continuous data in Virtual Reality could
-        challenge the way people perceive the urban fabric. This immersive space that mixes real and virtual
-        offers the necessary ground for this analytic workflow to expand beyond computation into a gradient
-        of
-        experiences.</p>
-      <p class='popup-description hidden' id="swapper-desc"></p>
-      <p class='popup-description hidden' id="urban-growth-desc">
+        optimisation processes</p>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2018</p>
+      </div>
+    </div>
+
+    <div class="project-popup hidden" id="rawbot-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>Rawbot</h2>
+      </div>
+      <div class="popup-quote">
+        <h3>" Build your home <br> with AR "</h3>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class='popup-description'>
+        <p>
+          This collaborative research project is aiming to utilise immersive technologies in the design and
+          fabrication
+          process, for the benefit of people living in rural areas. Living
+          spaces are allocated by the user and the bamboo poles get automatically placed to shape
+          the structure.
+        </p>
+        <p>
+          A neural network has been trainned to detect the start, end and nodes of bamboo sticks.
+          This way Rawbot is using the data to construct a discrete yet raw material
+          and pass it on as abstract geometry to the assembly stage. The user interacts with Rawbot
+          through an Augmented Reality (AR) app that projects in 3D space the final
+          position of the piece. Special silicone/steel core joints, were developed to keep the
+          pieces at, predictable, right angles, while their adjustable size can respond
+          to range of bamboo thicknesses.
+        </p>
+
+      </div>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2018</p>
+      </div>
+    </div>
+
+    <div class="project-popup hidden" id="geospatial-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>Geo-Graphics</h2>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class='popup-description'>
+        <p>
+          This research reflects upon principles of physical
+          connectivity and visual perception aiming to
+          explore mining, analysing and visualising geo-spatial data in a virtual 3D
+          space. By evaluating parts of the city against the main components that affect visual perception
+          (visibility, light, colour and movement), areas of low permeability are identified.
+        </p>
+        <p> This system helps in the creation of new topographies which encourage the interplay between human
+          and
+          inhuman intelligence in an environment of hybrid cyberspace. Hypervirtuality,
+          the analysis and evaluation of a set of multidimensional continuous data in Virtual Reality could
+          challenge the way people perceive the urban fabric.
+        </p>
+      </div>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2017</p>
+      </div>
+    </div>
+
+    <div class="project-popup hidden" id="swapper-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>Swapper</h2>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class='popup-description'></p>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2019</p>
+      </div>
+    </div>
+
+    <div class="project-popup hidden" id="urban-growth-desc">
+      <div class="popup-content">
+        <h2 class='popup-title'>Urban Growth</h2>
+      </div>
+      <div class="video-parent" style="--aspect-ratio: 16/9;">
+        <iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class='popup-description'>
         This project is considered as an exercise trying to explore
         new ways of predicting future evolution of the urban tissue.
         By gathering data indicating any sort of activity, the estmated
@@ -683,8 +772,18 @@
         regenerated in other available positions. The final result depicts
         an estimation of one of many version of urban development.
       </p>
+      <div class="share-project">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" class="fa fa-facebook"> </a>
+        <a target="_blank" alt="Tweet this page" class="fa fa-twitter twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=DecodeCreative&hashtags=decodeCreative" data-size="large"></a>
+        <p>Decode Creative / 2017</p>
+      </div>
     </div>
-   
+
+
+
+
+
   </div>
   <!-- <div class="counter">
     <h6 id="current-project">1</h6>
@@ -709,5 +808,3 @@
 </body>
 
 </html>
-
-<iframe src="https://player.vimeo.com/video/525248928" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>

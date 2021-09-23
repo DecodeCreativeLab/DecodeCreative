@@ -318,8 +318,6 @@ a {
     .menu.responsive a:first-child {
         margin-top: 2rem;
     }
-
-    
 }
 
 /*-------------------- SCROLLBAR --------------------*/
@@ -334,12 +332,12 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(196, 196, 196);
-    border: 1px solid rgb(196, 196, 196);
+    background: rgb(141, 141, 141);
+    border: 1px solid rgb(141, 141, 141);
 }
 
 div {
-    scrollbar-color: rgb(196, 196, 196) white;
+    scrollbar-color: rgb(141, 141, 141) white;
     scrollbar-width: thin;
     scrollbar-width: 6px;
 }
@@ -350,7 +348,7 @@ div {
 }
 
 ::-ms-scrollbar-thumb {
-    background: rgb(196, 196, 196);
+    background: rgb(141, 141, 141);
     /* border: 1px solid white; */
 }
 
@@ -507,7 +505,7 @@ li:hover .project-title {
     align-items: flex-end;
     grid-row: 1;
     grid-column: 1;
-    padding-bottom: 15%;
+    padding-bottom: 11%;
     display: flex;
     justify-content: center;
     /* padding-left: 1rem; */
@@ -515,6 +513,9 @@ li:hover .project-title {
     height: 20%;
     display: flex;
     align-items: flex-end; */
+}
+.popup-content h2{
+    text-shadow: 1px 1px #b5b5b5;
 }
 .x-btn {
     position: absolute;
@@ -553,7 +554,12 @@ li:hover .project-title {
     grid-column: 1;
     display: flex;
     justify-content: center;
+    color: var(--background-colour-dark);
     /* align-items: center; */
+}
+
+.popup-quote h3 {
+    font-style: italic;
 }
 
 .popup-title {
@@ -576,7 +582,7 @@ mark {
         left: 0 !important;
         /* height: 88vh !important; */
     }
-    
+
     .popup-description {
         font-size: small;
         padding: 2rem;
@@ -596,8 +602,8 @@ mark {
         position: relative;
         width: 100%;
         overflow-y: auto;
-    }   
-    
+    }
+
     .popup-content {
         padding-bottom: 0;
     }
@@ -609,16 +615,42 @@ mark {
 .share-project {
     grid-row: 2;
     grid-column: 3;
+    padding-right: 2rem;
+    padding-bottom: 2rem;    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    flex-grow: 1;
 }
 .share-project p {
     margin: 0;
     font-size: 0.7rem;
+}
+.project-next{
+display: flex;
+justify-content: flex-end;
+}
+.project-utils p{
+    font-size: 0.6rem;
+    /* font-family: monospace; */
+}
+
+.project-utils span{
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+.project-utils {
+    grid-row: 1;
+    grid-column: 3;
+    padding: 2rem;
+    padding-left: 4rem;
+    /* padding-bottom: 2rem; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .logo {

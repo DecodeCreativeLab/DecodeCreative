@@ -127,10 +127,11 @@ function scrollToNextElement() {
 //------------------------- GRID MOUSEOVER EFFECT -------------------------//
 const gridItems = [...document.querySelector('.grid').querySelectorAll('picture')];
 const polygon = document.querySelector('#polygon')
+const scrollParent = document.querySelector(".scroll-container")
 let currentElement;
 let screenSize = true;
 gridItemSetup();
-detectScroll(document.querySelector(".scroll-container"));
+detectScroll(scrollParent);
 detectHover();
 
 function gridItemSetup() {
@@ -153,7 +154,7 @@ function hoverEffect(el) {
     polygon.style.width = el.lastElementChild.clientWidth.toString() + 'px';
     polygon.style.height = el.lastElementChild.clientHeight.toString() + 'px';
     const position = getPos(el)
-    polygon.style.top = position.y + "px";
+    polygon.style.top = position.y - scrollParent.scrollTop + "px";    
     polygon.style.left = position.x + "px";
     el.nextElementSibling.style.opacity = 1
     polygon.firstElementChild.style.backgroundColor = getRandomColor()
@@ -188,9 +189,11 @@ function getRandomColor() {
 
 window.onresize = () => {
     hoverEffect(currentElement)
-    detectScroll(document.querySelector(".scroll-container"))
+    detectScroll(scrollParent)
     detectHover()
 }
+
+
 
 function openPopup() {
     popup.classList.remove('hidden')
@@ -205,8 +208,8 @@ function openPopup() {
 }
 
 function detectScroll(div) {
-    if (div.scrollHeight > div.clientHeight) div.style.alignItems = "flex-start";
-    else div.style.alignItems = "center"
+    // if (div.scrollHeight > div.clientHeight) div.style.alignItems = "flex-start";
+    // else div.style.alignItems = "center"
 }
 
 function detectHover() {

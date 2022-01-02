@@ -2,7 +2,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiYW5uYWthbXAiLCJhIjoiY2pxcGQ2dDJuMDBjbzQ0bnV0eDU0Y2dxciJ9.cXjuy1PnrpFANm1UItLJww';
 var map = new mapboxgl.Map({
     container: 'map', // Container ID
-    style: 'mapbox://styles/annakamp/ckmtkrl6i2gop17qp42kui01v', // 'mapbox://styles/annakamp/ckmtjf90942jp17pkfikm8mox', // Map style to use
+    style: 'mapbox://styles/annakamp/ckxxld85g639b16q0u2a755es', // 'mapbox://styles/annakamp/ckmtjf90942jp17pkfikm8mox', // Map style to use
     center: [7.3072819, 45.9083282], // Starting position [lng, lat]
     zoom: 3.5, // Starting zoom level
     preserveDrawingBuffer: true,
